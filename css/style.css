@@ -7,6 +7,14 @@ body {
   padding: 30px 0;
 }
 
+.howto-main {
+  text-align: center;  /* 文字中央揃え */
+  max-width: 800px;    /* 読みやすい幅 */
+  margin: 0 auto;      /* ページ中央に配置 */
+  padding: 30px 20px;  /* 余白 */
+}
+
+
 /* ヘッダー */
 header {
   background-color: #0099CC; /* tsuri-boonカラー */
