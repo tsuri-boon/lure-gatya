@@ -2,13 +2,29 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>本日のオススメルアーメーカー</title>
+  <title>tsuri-boon ルアーガチャ</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
+
+<!-- ヘッダー -->
+<header>
+  <a href="index.html" class="logo">tsuri-boon</a>
+  <nav>
+    <a href="index.html">ホーム</a>
+    <a href="howto.html">遊び方</a>
+    <a href="lures.html">ルアー紹介</a>
+    <a href="makers.html">メーカー</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+</header>
+
+<!-- メインコンテンツ -->
+<main>
   <h1>今日のルアーガチャ</h1>
 
+  <!-- ジャンル選択 -->
   <select id="genre">
     <option value="">ジャンルを選んでください</option>
     <option value="シーバス">シーバス</option>
@@ -16,14 +32,20 @@
     <option value="アジング">アジング</option>
   </select>
 
+  <!-- スロット -->
   <div id="slot-container">
     <div id="slot"></div>
   </div>
 
+  <!-- スピンボタン -->
   <button id="spin">ここをクリック！</button>
 
+  <!-- 結果表示 -->
   <div id="result"></div>
+</main>
 
-  <script src="js/script.js"></script>
+<!-- スクリプト読み込み -->
+<script src="js/script.js"></script>
+
 </body>
 </html>
