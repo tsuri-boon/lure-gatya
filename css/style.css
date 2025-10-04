@@ -157,7 +157,6 @@ input, textarea {
   display: block;      /* ブロック要素に変換 */
   margin: 0 auto;      /* 左右のマージン自動で中央寄せ */
   padding: 10px 20px;
-  background-color: #0099CC;
   color: white;
   border: none;
   border-radius: 5px;
