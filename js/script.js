@@ -1,7 +1,7 @@
 let makersData = {};
 let filteredMakers = [];
 
-fetch('data/lure_data_ex2.json')
+fetch('data/lure_data_5.json')
   .then(response => response.json())
   .then(data => {
     makersData = data;
