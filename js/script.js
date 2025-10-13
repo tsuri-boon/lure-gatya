@@ -39,7 +39,9 @@ if (saved) {
     <div><a href="${selected.url}" target="_blank">${selected.url}</a></div>
     <div style="margin-top: 20px;"></div>
     <div> おすすめルアー：${lure.name}</div>
-    <div style="margin-top: 10px;">${lure.image.replace(/height="\d+"/)}</div>
+    <div style="margin-top: 10px;">
+    <img src="${lure.image}" alt="${lure.name}" style="width:200px;">
+    </div>
     <div style="margin-top: 10px;">${lure.link}</div>
   `;
 }
