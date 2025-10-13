@@ -2,10 +2,18 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
+  text-align: left;
   background-color: #fafafa; 
   padding: 30px 0;
 }
+
+.index-main{
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: #fafafa; 
+  padding: 30px 0;
+
 
 .howto-main {
   text-align: center;  /* 文字中央揃え */
