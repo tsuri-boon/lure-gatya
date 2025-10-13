@@ -1,0 +1,777 @@
+[
+  {
+    "maker": "ADUSTA",
+    "maker_jap": "アダスタ",
+    "url": "https://www.adusta.jp/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "サリュー",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure38.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス",
+          "フラットフィッシュ"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "APIA",
+    "maker_jap": "アピア",
+    "url": "https://www.apiajapan.com/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "パンチライン",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure23.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      },
+      {
+        "name": "アルゴ",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure29.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      },
+      {
+        "name": "アップライジング",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure49.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "BASSDAY",
+    "maker_jap": "バスデイ",
+    "url": "https://www.bassday.co.jp/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "レンジバイブ",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure20.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス",
+          "バス"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "BLAZEYE",
+    "maker_jap": "ブレイズアイ",
+    "url": "https://blazeye.stores.jp/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "レヴォルーク",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure28.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス",
+          "ショアジギング",
+          "フラットフィッシュ"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "BLUEBLUE",
+    "maker_jap": "ブルーブルー",
+    "url": "https://www.bluebluefishing.com/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "ジョルティ",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure4.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス",
+          "ショアジギング",
+          "フラットフィッシュ"
+        ]
+      },
+      {
+        "name": "ナレージ",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure5.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      },
+      {
+        "name": "スネコン",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure6.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      },
+      {
+        "name": "ブローウィン",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure7.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス",
+          "ショアジギング"
+        ]
+      },
+      {
+        "name": "ガボッツ",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure8.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "BREADEN",
+    "maker_jap": "ブリーデン",
+    "url": "https://breaden.net/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "メタルマル",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure42.jpg",
+        "comment": "",
+        "genre": [
+          "ショアジギング",
+          "フラットフィッシュ"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "COREMAN",
+    "maker_jap": "コアマン",
+    "url": "https://www.coreman.jp/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "VJ",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure3.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス",
+          "ショアジギング",
+          "フラットフィッシュ"
+        ]
+      },
+      {
+        "name": "アイアンプレート",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure22.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス",
+          "ショアジギング",
+          "フラットフィッシュ"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "DAIWA",
+    "maker_jap": "ダイワ",
+    "url": "https://www.daiwa.com/jp",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "スイッチヒッター",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure16.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      },
+      {
+        "name": "セットアッパー",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure43.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス",
+          "ショアジギング"
+        ]
+      },
+      {
+        "name": "TGベイト",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure50.jpg",
+        "comment": "",
+        "genre": [
+          "ショアジギング",
+          "フラットフィッシュ"
+        ]
+      },
+      {
+        "name": "つゆかぜ",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure53.jpg",
+        "comment": "",
+        "genre": [
+          "アジング"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "DUO",
+    "maker_jap": "デュオ",
+    "url": "https://www.duo-inc.co.jp/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "マニック",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure10.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      },
+      {
+        "name": "フリッパー",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure52.jpg",
+        "comment": "",
+        "genre": [
+          "ショアジギング",
+          "フラットフィッシュ"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "ECLIPSE",
+    "maker_jap": "エクリプス",
+    "url": "https://eclipse.rings-fishing.jp/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "バロール",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure45.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "ELEMENTS",
+    "maker_jap": "エレメンツ",
+    "url": "https://elmnts.jp/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "ダビンチ",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure35.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス",
+          "バス"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "GOTO9",
+    "maker_jap": "ゴートゥーナイン",
+    "url": "https://goto9.jp/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "SWARM",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure39.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "Gaea",
+    "maker_jap": "ガイア",
+    "url": "http://www.gaea-area.com/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "エリア10",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure15.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "JACKAL",
+    "maker_jap": "ジャッカル",
+    "url": "https://www.jackall.co.jp/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "ジナリ",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure30.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "JACKSON",
+    "maker_jap": "ジャクソン",
+    "url": "https://jackson.jp/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "アスリート",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure32.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス",
+          "ショアジギング",
+          "フラットフィッシュ"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "JADO PRODUCTS",
+    "maker_jap": "ジャドウプロダクツ",
+    "url": "https://ja-do.jp/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "アーダゼロイノベーター",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure34.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "Jackson",
+    "maker_jap": "ジャクソン",
+    "url": "https://jackson.jp/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "飛びすぎダニエル",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure41.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス",
+          "ショアジギング",
+          "フラットフィッシュ"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "LONGIN",
+    "maker_jap": "ロンジン",
+    "url": "https://www.longin.jp/top.html",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "ウェイキーブー",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure36.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "MADNESS",
+    "maker_jap": "マドネス",
+    "url": "https://www.madness.co.jp/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "バクリースピン",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure33.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "Majorcraft",
+    "maker_jap": "メジャークラフト",
+    "url": "https://www.majorcraft.co.jp/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "ジグパラショート",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure51.jpg",
+        "comment": "",
+        "genre": [
+          "ショアジギング",
+          "フラットフィッシュ"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "Megabass",
+    "maker_jap": "メガバス",
+    "url": "https://www.megabass.co.jp/site/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "カゲロウ",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure19.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      },
+      {
+        "name": "オニマル",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure24.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス",
+          "ショアジギング",
+          "フラットフィッシュ"
+        ]
+      },
+      {
+        "name": "x80-sw",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure26.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "POP SEA CREW",
+    "maker_jap": "ポップシークルー",
+    "url": "https://popseacrew.com/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "バンク",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure31.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "POPSEACREW",
+    "maker_jap": "ポップシークル―",
+    "url": "https://popseacrew.com/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "レクター",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure27.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "POZIDRIVE garage",
+    "maker_jap": "ポジドライブガレージ",
+    "url": "https://pdg.co.jp/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "ジグザグベイト",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure17.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "RACKEY CRAFT",
+    "maker_jap": "ラッキークラフト",
+    "url": "https://www.luckycraft.co.jp/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "ビーフリーズ",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure9.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      },
+      {
+        "name": "ワンダー",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure11.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス",
+          "アジング"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "RAPALA",
+    "maker_jap": "ラパラ",
+    "url": "https://rapala.co.jp/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "CD(カウントダウン)",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure1.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "RUDIE'S",
+    "maker_jap": "ルーディーズ",
+    "url": "https://rudies.co.jp/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "魚子メタル",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure48.jpg",
+        "comment": "",
+        "genre": [
+          "アジング"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "SHIMANO",
+    "maker_jap": "シマノ",
+    "url": "https://fish.shimano.com/ja-JP",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "サイレントアサシン",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure18.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス",
+          "ショアジギング"
+        ]
+      },
+      {
+        "name": "アーマジョイント60",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure55.jpg",
+        "comment": "",
+        "genre": [
+          "アジング"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "TACKLE HOUSE",
+    "maker_jap": "タックルハウス",
+    "url": "https://www.tacklehouse.co.jp/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "ローリングベイト",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure2.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "TACKLEHOUSE",
+    "maker_jap": "タックルハウス",
+    "url": "https://www.tacklehouse.co.jp/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "TKLM",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure37.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "Vallyhill",
+    "maker_jap": "バレーヒル",
+    "url": "https://valleyhill1.jp/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "スーサン",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure25.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "WANS",
+    "maker_jap": "わんず",
+    "url": "https://wans-fishing.com/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "しぼり",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure47.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "WaterLand",
+    "maker_jap": "ウォーターランド",
+    "url": "http://www.waterland.jp/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "ジャークソニック",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure40.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス",
+          "バス",
+          "ショアジギング"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "Yamaria",
+    "maker_jap": "ヤマリア",
+    "url": "https://www.yamaria.co.jp/maria",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "フラペン",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure44.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス",
+          "ショアジギング",
+          "フラットフィッシュ"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "ZIPBAITS",
+    "maker_jap": "ジップベイツ",
+    "url": "https://www.zipbaits.com/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "リッジ",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure54.jpg",
+        "comment": "",
+        "genre": [
+          "アジング"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "hifumi creating",
+    "maker_jap": "ヒフミクリエイティング",
+    "url": "https://hifumi-creating.com/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "レイリア",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure21.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "ima",
+    "maker_jap": "アムズデザイン / アイマ",
+    "url": "https://www.ima-ams.co.jp/",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "KOSUKE",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure46.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス",
+          "アジング"
+        ]
+      }
+    ]
+  },
+  {
+    "maker": "ima",
+    "maker_jap": "アムズデザイン / アイマ",
+    "url": "https://www.ima-ams.co.jp/product/products/list?category_id=7",
+    "link": "準備中",
+    "lures": [
+      {
+        "name": "SASUKE",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure12.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス",
+          "ショアジギング"
+        ]
+      },
+      {
+        "name": "ソバット",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure13.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      },
+      {
+        "name": "komomo",
+        "image": "https://github.com/tsuri-boon/lure-gatya/blob/main/lure14.jpg",
+        "comment": "",
+        "genre": [
+          "シーバス"
+        ]
+      }
+    ]
+  }
+]
