@@ -79,7 +79,7 @@ header {
   width: 100%; /* 横幅100% */
   background-color: #0099CC; /* tsuri-boonカラー */
   color: white;
-  padding: 0;
+  padding: 15px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -95,7 +95,7 @@ header {
 footer {
   width: 100%; /* 横幅100% */
   margin-top: 60px;
-  padding: 0;
+  padding: 10px;
   background-color: #0099CC; /* tsuri-boonカラー */
   color: white;
   text-align: center;
