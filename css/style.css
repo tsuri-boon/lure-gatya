@@ -27,7 +27,7 @@ h1 {
 h1::after {
   content: "";
   display: block;
-  width: 200px;
+  width: 75%;
   height: 4px;
   background: #FF6B35; /* アクセントオレンジ */
   margin: 10px auto 0;
