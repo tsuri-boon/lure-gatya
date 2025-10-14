@@ -9,7 +9,6 @@ body {
   flex-direction: column;
   min-height: 100vh; /* 画面全体の高さを確保 */
   margin: 0;
-  padding: 0; /* 横の余白は0 */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: left;
   background-color: #fafafa; 
