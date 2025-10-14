@@ -37,6 +37,35 @@ header {
   z-index: 100;
 }
 
+/*　フッター　*/
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  background-color: #0a2540;
+  color: white;
+  text-align: center;
+}
+
+.footer-nav {
+  margin-bottom: 10px;
+}
+
+.footer-nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+
 /* ロゴ */
 .logo {
   font-size: 24px;
