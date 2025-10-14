@@ -1,17 +1,26 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 /* ページ全体 */
 body {
+   display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 画面全体の高さを確保 */
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: left;
   background-color: #fafafa; 
-  padding: 30px 0;
 }
 
-.index-main{
-  margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+main {
+  flex: 1; /* main部分を自動的に広げて、フッターを下に押しやる */
+  padding: 20px;
+}
+
+ .index-main {
   text-align: center;
-  background-color: #fafafa; 
   padding: 30px 0;
 }
 
