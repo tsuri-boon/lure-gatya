@@ -78,6 +78,7 @@ main {
 
 /* ヘッダー */
 header {
+  width: 100%; /* 横幅100% */
   background-color: #0099CC; /* tsuri-boonカラー */
   color: white;
   padding: 15px 30px;
@@ -88,15 +89,20 @@ header {
   position: sticky; /* スクロール固定 */
   top: 0;
   z-index: 100;
+  box-sizing: border-box; /* パディング込みで幅100% */
+  margin: 0; /* 親要素の余白リセット */
 }
 
 /*　フッター　*/
 footer {
+  width: 100%; /* 横幅100% */
   margin-top: 60px;
   padding: 10px;
   background-color: #0099CC; /* tsuri-boonカラー */
   color: white;
   text-align: center;
+  box-sizing: border-box; /* パディング込みで幅100% */
+  margin: 0; /* 親要素の余白リセット */
 }
 
 .footer-nav {
