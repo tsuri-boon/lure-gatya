@@ -14,6 +14,50 @@ body {
   background-color: #fafafa; 
 }
 
+/* h1: ページトップ用 */
+h1 {
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #0099CC; /* tsuri-boonカラー */
+  text-align: center;
+  margin: 40px 0 30px;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #FF6B35; /* アクセントオレンジ */
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* h2: セクション用 */
+h2 {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #006C99; /* 少し濃いブルー */
+  border-left: 5px solid #0099CC;
+  padding-left: 12px;
+  margin: 40px 0 20px;
+}
+
+/* h3: サブセクション用 */
+h3 {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #0099CC;
+  background-color: #E6F7FB; /* 淡いブルー背景 */
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin: 25px 0 15px;
+}
+
+
+
+
 main {
   flex: 1; /* main部分を自動的に広げて、フッターを下に押しやる */
   padding: 20px;
