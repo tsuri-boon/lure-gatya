@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   min-height: 100vh; /* 画面全体の高さを確保 */
   margin: 0;
+  padding: 0; /* 横の余白は0 */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: left;
   background-color: #fafafa; 
@@ -56,11 +57,9 @@ h3 {
 }
 
 
-
-
 main {
   flex: 1; /* main部分を自動的に広げて、フッターを下に押しやる */
-  padding: 20px;
+  padding: 30px;
 }
 
  .index-main {
@@ -75,13 +74,12 @@ main {
   padding: 30px 20px;  /* 余白 */
 }
 
-
 /* ヘッダー */
 header {
   width: 100%; /* 横幅100% */
   background-color: #0099CC; /* tsuri-boonカラー */
   color: white;
-  padding: 15px 30px;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -97,7 +95,7 @@ header {
 footer {
   width: 100%; /* 横幅100% */
   margin-top: 60px;
-  padding: 10px;
+  padding: 0;
   background-color: #0099CC; /* tsuri-boonカラー */
   color: white;
   text-align: center;
