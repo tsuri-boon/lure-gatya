@@ -75,7 +75,7 @@ function createSlotItems() {
 const spinMessages = [
   "何が出るかな..？",
   "レアルアーが来るかも！？",
-  "好きなメーカーがわかる？",
+  "好きなメーカーがでそう！",
   "抽選中..."
 ];
 
