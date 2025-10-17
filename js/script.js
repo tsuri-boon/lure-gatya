@@ -71,6 +71,20 @@ function createSlotItems() {
   });
 }
 
+// 抽選中メッセージの配列
+const spinMessages = [
+  "何が出るかな..？",
+  "レアルアーが来るかも！？",
+  "好きなメーカーがわかる？",
+  "抽選中..."
+];
+
+// ランダム取得関数
+function getRandomMessage() {
+  const index = Math.floor(Math.random() * spinMessages.length);
+  return spinMessages[index];
+}
+
 spinBtn.addEventListener("click", () => {
   if(spinning) return;
   if(filteredMakers.length === 0) {
@@ -78,7 +92,8 @@ spinBtn.addEventListener("click", () => {
     return;
   }
   spinning = true;
-  result.textContent = "何が出るかな..？";
+  // ランダムメッセージを表示
+  result.textContent = getRandomMessage();
   spinBtn.disabled = true;
 
   slot.style.transition = "none";
