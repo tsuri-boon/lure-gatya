@@ -147,6 +147,22 @@ nav a:hover {
   color: #FF6B35; /* ホバー時オレンジ */
 }
 
+/* スマホ対応 */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    margin-top: 10px;
+  }
+  nav a {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+}
+
+
 /* ──────────────── */
 /* サブナビバー（ロゴ下） */
 /* ──────────────── */
@@ -174,7 +190,7 @@ nav a:hover {
 .sub-nav-inner a {
   color: #333;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   padding: 6px 0;
   transition: color 0.2s ease;
@@ -188,27 +204,11 @@ nav a:hover {
 @media (max-width: 600px) {
   .sub-nav-inner {
     gap: 18px;
-    font-size: 14px;
+    font-size: 24px;
     padding: 8px 14px;
   }
 }
 
-
-
-/* スマホ対応 */
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  nav {
-    margin-top: 10px;
-  }
-  nav a {
-    margin-left: 0;
-    margin-right: 15px;
-  }
-}
 
 /* ルアーガチャ部分 */
 #genre {
