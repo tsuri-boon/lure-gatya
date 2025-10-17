@@ -78,7 +78,7 @@ spinBtn.addEventListener("click", () => {
     return;
   }
   spinning = true;
-  result.textContent = "回転中...";
+  result.textContent = "何が出るかな..？";
   spinBtn.disabled = true;
 
   slot.style.transition = "none";
