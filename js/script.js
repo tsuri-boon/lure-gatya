@@ -132,7 +132,7 @@ spinBtn.addEventListener("click", () => {
           <p>ルアー名: ${randomLure.name}</p>
           <p>種類： ${randomLure.type}</p>
          <div style="margin-top: 10px;">
-          <img src="${randomLure.image}" alt="${randomLure.name}" style="width:400px;">
+          <img src="${randomLure.image}" alt="${randomLure.name}" style="width:100%; max-width:400px; height:auto;">
           </div>
           <div style="margin-top: 10px;">${selected.link}</div>
         `;
