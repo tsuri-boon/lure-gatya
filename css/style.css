@@ -13,6 +13,11 @@ body {
   text-align: left;
   background-color: #fafafa; 
 }
+html {
+  -webkit-text-size-adjust: 100%; /* iOS Safari用 */
+  -ms-text-size-adjust: 100%;     /* 古いAndroid/IE対策 */
+  text-size-adjust: 100%;         /* 標準プロパティ */
+}
 
 /* h1: ページトップ用 */
 h1 {
@@ -60,6 +65,21 @@ main {
   flex: 1; /* main部分を自動的に広げて、フッターを下に押しやる */
   padding: 30px;
 }
+
+p {
+  font-size: 1rem;        /* 基本文字サイズ */
+  line-height: 1.6;       /* 読みやすい行間 */
+  color: #333;            /* 全体の文字色統一 */
+  margin: 0 0 1em;        /* 下に適度な余白 */
+}
+
+/* スマホ用に少し小さく */
+@media (max-width: 600px) {
+  p {
+    font-size: 0.95rem;
+  }
+}
+
 
  .index-main {
   text-align: center;
