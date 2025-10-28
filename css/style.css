@@ -146,14 +146,14 @@ footer {
 }
 
 footer p {
-  font-size: 0.9em;
+  font-size: 0.6em;
   color: #ccc;
 }
 
 
 /* ロゴ */
 .logo {
-  font-size: 48px;
+  font-size: 24px;
   font-weight: bold;
   text-decoration: none;
   color: white;
@@ -229,7 +229,7 @@ nav a:hover {
 @media (max-width: 600px) {
   .sub-nav-inner {
     gap: 18px;
-    font-size: 24px;
+    font-size: 18px;
     padding: 8px 14px;
   }
 }
