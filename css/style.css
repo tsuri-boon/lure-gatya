@@ -26,7 +26,7 @@ html {
 
 /* h1: ページトップ用 */
 h1 {
-  font-size: 2.0em;
+  font-size: 24px;
   font-weight: bold;
   color: #1F2F54; /* ネイビーブルーカラー */
   text-align: center;
@@ -46,7 +46,7 @@ h1::after {
 
 /* h2: セクション用 */
 h2 {
-  font-size: 1.6em;
+  font-size: 20px;
   font-weight: bold;
   color: #006C99; /* 少し濃いブルー */
   border-left: 5px solid #0099CC;
@@ -56,7 +56,7 @@ h2 {
 
 /* h3: サブセクション用 */
 h3 {
-  font-size: 1.3em;
+  font-size: 18px;
   font-weight: bold;
   color: #0099CC;
   background-color: #E6F7FB; /* 淡いブルー背景 */
