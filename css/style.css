@@ -137,6 +137,7 @@ footer {
 
 .footer-nav a {
   color: white;
+  font-size: 0.8em;
   margin: 0 10px;
   text-decoration: none;
 }
@@ -146,7 +147,7 @@ footer {
 }
 
 footer p {
-  font-size: 0.6em;
+  font-size: 0.9em;
   color: #ccc;
 }
 
