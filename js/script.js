@@ -129,10 +129,12 @@ spinBtn.addEventListener("click", () => {
         result.innerHTML = `<h2>${makerName}${makerNameJap}</h2>`;
         result.innerHTML += `
          <div><a href="${selected.url}" target="_blank">${selected.url}</a></div>
-          <p>ルアー名: ${randomLure.name}</p>
-          <p>種類： ${randomLure.type}</p>
           <div class="lure-image" style="margin-top:10px; max-width:400px; height:auto;　display: block; margin: 0 auto;">
           ${randomLure.image}  
+          </div>
+          <div>
+          <p>ルアー名: ${randomLure.name}</p>
+          <p>種類： ${randomLure.type}</p>
           </div>
           <div style="margin-top: 10px;">${selected.link}</div>
         `;
