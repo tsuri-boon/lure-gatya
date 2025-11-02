@@ -77,31 +77,36 @@
   <dt>ターゲット魚種</dt><dd>シーバス・ヒラメ</dd>
 </dl>
 
+<div class="spec-card">
+  <dl>
+    <dt>メーカー</dt><dd>BlueBlue</dd>
+    <dt>長さ</dt><dd>140mm</dd>
+    <dt>重さ</dt><dd>23g</dd>
+    <dt>タイプ</dt><dd>スローフローティング</dd>
+  </dl>
+</div>
 
-<dl class="spec-basic">
-  <dt>メーカー</dt><dd>BlueBlue</dd>
-  <dt>長さ</dt><dd>140mm</dd>
-  <dt>重さ</dt><dd>23g</dd>
-  <dt>タイプ</dt><dd>シンキングペンシル</dd>
-  <dt>ターゲット魚種</dt><dd>シーバス・ヒラメ</dd>
+<dl class="spec-table">
+  <dt>メーカー</dt><dd>ima</dd>
+  <dt>長さ</dt><dd>120mm</dd>
+  <dt>重さ</dt><dd>20g</dd>
+  <dt>タイプ</dt><dd>フローティング</dd>
 </dl>
 
-<dl class="spec-basic">
-  <dt>メーカー</dt><dd>BlueBlue</dd>
-  <dt>長さ</dt><dd>140mm</dd>
-  <dt>重さ</dt><dd>23g</dd>
-  <dt>タイプ</dt><dd>シンキングペンシル</dd>
-  <dt>ターゲット魚種</dt><dd>シーバス・ヒラメ</dd>
-</dl>
+<div class="spec-compact">
+  <div><strong>メーカー：</strong> BlueBlue</div>
+  <div><strong>長さ：</strong> 140mm</div>
+  <div><strong>重さ：</strong> 23g</div>
+  <div><strong>タイプ：</strong> シンキング</div>
+</div>
 
-<dl class="spec-basic">
-  <dt>メーカー</dt><dd>BlueBlue</dd>
-  <dt>長さ</dt><dd>140mm</dd>
-  <dt>重さ</dt><dd>23g</dd>
-  <dt>タイプ</dt><dd>シンキングペンシル</dd>
-  <dt>ターゲット魚種</dt><dd>シーバス・ヒラメ</dd>
+<dl class="spec-luxury">
+  <dt>メーカー</dt><dd>MEGABASS</dd>
+  <dt>長さ</dt><dd>115mm</dd>
+  <dt>重さ</dt><dd>14g</dd>
+  <dt>タイプ</dt><dd>サスペンド</dd>
+  <dt>アクション</dt><dd>タイトローリング</dd>
 </dl>
-
 
 
   <h2>2. </h2>
