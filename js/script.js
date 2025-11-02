@@ -126,7 +126,7 @@ spinBtn.addEventListener("click", () => {
       if (randomLure) {
         const makerName = selected.maker;
         const makerNameJap = selected.maker_jap ? `（${selected.maker_jap}）` : "";
-        result.innerHTML = `<h2>${makerName}${makerNameJap}</h2>`;
+        result.innerHTML = `<div class="maker-result" style="font-size:20px; font-weight: bold; margin-top:20px;">${makerName}${makerNameJap}</div>`;
         result.innerHTML += `
          <div class="maker-url" style="font-size: 14px;">
          <a href="${selected.url}" target="_blank">${selected.url}</a>
