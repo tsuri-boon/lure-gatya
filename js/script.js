@@ -131,7 +131,7 @@ spinBtn.addEventListener("click", () => {
          <div class="maker-url" style="font-size: 14px;">
          <a href="${selected.url}" target="_blank">${selected.url}</a>
          </div>
-          <div class="lure-image" style="margin-top:10px; max-width:400px; height:auto;　display: block; margin: 0 auto;">
+          <div class="lure-image" style="margin-top:10px; margin-bottom:20px; max-width:400px; height:auto;　display: block; margin: 0 auto;">
           ${randomLure.image}  
           </div>
           <div>
