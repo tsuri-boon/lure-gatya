@@ -78,6 +78,100 @@ p {
   margin: 0 0 1em;        /* 下に適度な余白 */
 }
 
+.spec-basic {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 12px;
+  gap: 4px 12px;
+}
+.spec-basic dt {
+  font-weight: 600;
+  color: #333;
+}
+.spec-basic dd {
+  margin: 0;
+  color: #555;
+}
+
+.spec-card {
+  background: linear-gradient(145deg, #eaf3ff, #d6e4ff);
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: fit-content;
+}
+.spec-card dl {
+  display: grid;
+  grid-template-columns: 100px auto;
+  gap: 6px 12px;
+}
+.spec-card dt {
+  font-weight: bold;
+  color: #1e40af;
+}
+.spec-card dd {
+  margin: 0;
+  color: #0f172a;
+}
+
+.spec-table {
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 400px;
+}
+.spec-table dt, .spec-table dd {
+  display: table-cell;
+  border: 1px solid #ddd;
+  padding: 6px 10px;
+}
+.spec-table dt {
+  background: #f0f0f0;
+  font-weight: bold;
+  width: 35%;
+}
+.spec-table dd {
+  background: #fff;
+}
+
+.spec-compact {
+  background: #f9fafb;
+  border-left: 4px solid #3b82f6;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.spec-compact strong {
+  color: #1d4ed8;
+}
+
+.spec-luxury {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: fit-content;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.spec-luxury dt {
+  color: #555;
+  font-weight: bold;
+}
+.spec-luxury dd {
+  margin: 0 0 6px 0;
+  color: #222;
+}
+
+
+
+
+
+
+
 /* スマホ用に少し小さく */
 @media (max-width: 600px) {
   p {
