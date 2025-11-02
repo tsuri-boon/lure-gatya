@@ -78,22 +78,38 @@ p {
   margin: 0 0 1em;        /* 下に適度な余白 */
 }
 
+
 .spec-basic {
   display: grid;
-  grid-template-columns: 140px 1fr;
+  grid-template-columns: 140px 1fr; /* 左が項目、右が内容 */
   background: #f8f8f8;
   border-radius: 8px;
-  padding: 12px;
-  gap: 4px 12px;
+  padding: 8px 12px;
+  gap: 0 12px; /* 横の間隔 */
 }
+
+.spec-basic dt,
+.spec-basic dd {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd; /* 仕切り線 */
+}
+
 .spec-basic dt {
   font-weight: 600;
   color: #333;
 }
+
 .spec-basic dd {
   margin: 0;
   color: #555;
 }
+
+/* 最後の項目だけ線を消す */
+.spec-basic dt:last-of-type,
+.spec-basic dd:last-of-type {
+  border-bottom: none;
+}
+
 
 .spec-card {
   background: linear-gradient(145deg, #eaf3ff, #d6e4ff);
