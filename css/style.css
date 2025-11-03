@@ -270,6 +270,11 @@ footer p {
   color: white;
 }
 
+.logo img {
+  height: 50px;          /* 高さ指定（横幅は自動で比率維持） */
+  vertical-align: middle; /* 周囲の文字・要素と縦方向の位置を中央揃え */
+}
+
 /* ナビゲーション */
 nav a {
   color: white;
