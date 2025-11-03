@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="tsuri-boonは釣り人によるルアーガチャWebアプリ。BlueBlueやMegabassなど人気ルアーがランダムで登場！">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="tsuri-boon開発チーム">
+  
+  <meta property="og:title" content="tsuri-boon｜釣り人によるルアーガチャ">
+  <meta property="og:description" content="人気ルアーをガチャで楽しむ釣り人のためのWebアプリ。">
+  <meta property="og:site_name" content="tsuri-boon">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tsuri-boon.github.io/lure-gatya/">
+  
+  <title>tsuri-boon ルアーガチャ</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  
+  
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J1YGK5NJLT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-J1YGK5NJLT');
+</script>
+
+</head>
+<body>
+
+<!-- ヘッダー -->
+<header>
+  <a href="index.html" class="logo">tsuri-boon</a>
+ 
+  
+</header>
+  
+  <!-- サブナビゲーションバー -->
+<div class="sub-nav">
+  <nav class="sub-nav-inner">
+    <a href="lure-gatya.html">ガチャページ</a>
+    <a href="tsuri-boon.html">tsuri-boonとは</a>
+    <a href="makers.html">メーカー一覧</a>
+  </nav>
+</div>
+
+<!-- メインコンテンツ -->
+<main class="index-main"> 
+  <h1>ルアーガチャ</h1>
+
+  <!-- ジャンル選択 -->
+  <select id="genre">
+    <option value="">ジャンルを選んでください</option>
+    <option value="シーバス">シーバス</option>
+    <option value="ショアジギング">ショアジギング</option>
+    <option value="アジング">アジング</option>
+  </select>
+
+  <!-- スロット -->
+  <div id="slot-container">
+    <div id="slot"></div>
+  </div>
+
+  <!-- スピンボタン -->
+  <button id="spin">ガチャを回す！</button>
+
+  <!-- 結果表示 -->
+  <div id="result"></div>
+</main>
+
+<!-- フッター -->
+<footer>
+  <nav class="footer-nav">
+    <a href="index.html">トップ</a>
+    <a href="article/privacy.html">プライバシーポリシー</a>
+    <a href="form.html">お問い合わせ</a>
+  </nav>
+  <p class="copyright">© 2025 tsuri-boon</p>
+</footer>
+  
+<!-- スクリプト読み込み -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
