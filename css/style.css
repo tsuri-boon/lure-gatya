@@ -110,6 +110,11 @@ p {
   border-bottom: none;
 }
 
+@media (max-width: 480px) {
+  .spec-basic {
+    grid-template-columns: 100px 1fr;
+  }
+}
 
 .spec-card {
   background: linear-gradient(145deg, #eaf3ff, #d6e4ff);
