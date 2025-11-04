@@ -218,8 +218,7 @@ p {
 
 .pr-note {
   display: inline-block;           /* 背景をテキスト分の幅に */
-  background: #f6f6f6;             /* ごく淡いグレー */
-  border-left: 3px solid #ccc;
+ background: rgba(0,0,0,0.03);       /* ごく淡いグレー */
   padding: 6px 10px;               /* 背景内の余白 */
   margin: 12px 0 20px;
   color: #666;
