@@ -187,7 +187,27 @@ p {
   color: #222;
 }
 
+.color-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
 
+.color-list li {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+  font-size: 0.95em;
+}
+
+.color-chip {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+}
 
 
 
