@@ -216,19 +216,27 @@ p {
 }
 
 
-
 .pr-note {
-  background: #fff7e6;
-  border-left: 4px solid #ffb020;
-  padding: 10px 12px;
-  margin: 12px 0;
-  color: #333;
-  font-size: 0.95rem;
-  border-radius: 6px;
+  background: #f6f6f6; /* ごく淡いグレー */
+  border-left: 3px solid #ccc;
+  padding: 6px 10px;
+  margin: 12px 0 20px;
+  color: #666;
+  font-size: 0.9rem; /* 本文より小さめ */
+  border-radius: 4px;
+  line-height: 1.5;
 }
-.pr-note strong { color: #b35b00; }
 
-
+.pr-label {
+  display: inline-block;
+  font-size: 0.8rem; /* さらに小さめ */
+  color: #666;
+  background: #e4e4e4;
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin-right: 6px;
+  font-weight: 600;
+}
 
 
 
