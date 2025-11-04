@@ -222,14 +222,14 @@ p {
   padding: 6px 10px;
   margin: 12px 0 20px;
   color: #666;
-  font-size: 0.9rem; /* 本文より小さめ */
+  font-size: 0.8rem; /* 本文より小さめ */
   border-radius: 4px;
   line-height: 1.5;
 }
 
 .pr-label {
   display: inline-block;
-  font-size: 0.8rem; /* さらに小さめ */
+  font-size: 0.7rem; /* さらに小さめ */
   color: #666;
   background: #e4e4e4;
   padding: 1px 6px;
