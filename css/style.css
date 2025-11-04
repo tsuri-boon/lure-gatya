@@ -216,6 +216,24 @@ p {
 }
 
 
+
+.pr-note {
+  background: #fff7e6;
+  border-left: 4px solid #ffb020;
+  padding: 10px 12px;
+  margin: 12px 0;
+  color: #333;
+  font-size: 0.95rem;
+  border-radius: 6px;
+}
+.pr-note strong { color: #b35b00; }
+
+
+
+
+
+
+
 /* スマホ用に少し小さく */
 @media (max-width: 600px) {
   p {
