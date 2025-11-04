@@ -217,19 +217,21 @@ p {
 
 
 .pr-note {
-  background: #f6f6f6; /* ごく淡いグレー */
+  display: inline-block;           /* 背景をテキスト分の幅に */
+  background: #f6f6f6;             /* ごく淡いグレー */
   border-left: 3px solid #ccc;
-  padding: 6px 10px;
+  padding: 6px 10px;               /* 背景内の余白 */
   margin: 12px 0 20px;
   color: #666;
-  font-size: 0.8rem; /* 本文より小さめ */
+  font-size: 0.8rem;               /* 本文より少し小さく */
   border-radius: 4px;
   line-height: 1.5;
+  max-width: 100%;                 /* スマホでも崩れないように */
 }
 
 .pr-label {
   display: inline-block;
-  font-size: 0.7rem; /* さらに小さめ */
+  font-size: 0.7rem;
   color: #666;
   background: #e4e4e4;
   padding: 1px 6px;
