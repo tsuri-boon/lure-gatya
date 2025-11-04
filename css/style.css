@@ -190,23 +190,29 @@ p {
 .color-gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 16px;
 }
 
 .color-item {
-  width: 100px;
+  width: 130px;
   text-align: center;
 }
 
 .color-item img {
   width: 100%;
-  border-radius: 6px;
+  border-radius: 8px;
   border: 1px solid #ddd;
 }
 
+.color-item h3 {
+  font-size: 0.95em;
+  margin: 6px 0 2px;
+  color: #333;
+}
+
 .color-item p {
-  margin-top: 4px;
-  font-size: 0.9em;
+  font-size: 0.85em;
+  color: #666;
 }
 
 
