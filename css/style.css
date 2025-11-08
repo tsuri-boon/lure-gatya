@@ -239,6 +239,7 @@ p {
   font-weight: 600;
 }
 
+/* ルアーサムネ画像 */
 .main-image {
   display: block;
   margin: 0 auto;
@@ -246,6 +247,13 @@ p {
   height: auto;
 }
 
+@media (max-width: 768px) {
+  .main-image {
+    width: 100%; /* スマホでは全幅 */
+  }
+}
+
+/* ルアーガチャ誘導ボタン */
 .btn-recommend {
   display: block;
   width: 90%;
@@ -277,12 +285,6 @@ p {
   }
 }
 
-
-@media (max-width: 768px) {
-  .main-image {
-    width: 100%; /* スマホでは全幅 */
-  }
-}
 
 
 
