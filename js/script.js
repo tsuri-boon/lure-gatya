@@ -131,12 +131,23 @@ spinBtn.addEventListener("click", () => {
          <div class="maker-url" style="font-size: 14px; margin-bottom:20px;">
          <a href="${selected.url}" target="_blank">${selected.url}</a>
          </div>
+         <div class="lure-card" style="
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 16px;
+      margin: 0 auto 20px;
+      max-width: 400px;
+      background: #fff;
+      text-align: center;
+    ">
           <div class="lure-image" style="margin-bottom:20px; max-width:400px; height:auto;　display: block; margin: 0 auto;">
           ${randomLure.image}  
           </div>
           <div>
           <p>ルアー名:<strong>${randomLure.name}</strong></p>
           <p>種類： ${randomLure.type}</p>
+          </div>
           </div>
           <div style="margin-top: 10px;">${selected.link}</div>
         `;
