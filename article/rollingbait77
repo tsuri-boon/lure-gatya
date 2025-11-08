@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="tsuri-boonは釣り人によるルアーガチャWebアプリ。BlueBlueやMegabassなど人気ルアーがランダムで登場！">
+  <meta name="description" content="ローリングベイトはシーバス定番ルアー。人気の秘訣と使用方法を徹底解説。tsuri-boonは釣り人による釣りWebサイト。">
   <meta name="robots" content="index, follow">
   <meta name="author" content="tsuri-boon開発チーム">
   <link rel="icon" href="../image/tsuriboon_favicon.png" type="image/png">
 
-  <meta property="og:title" content="tsuri-boon｜釣り人によるルアーガチャ">
-  <meta property="og:description" content="人気ルアーをガチャで楽しむ釣り人のためのWebアプリ。">
+  <meta property="og:title" content="tsuri-boon｜ローリングベイト77">
+  <meta property="og:description" content="ローリングベイトはシーバス定番ルアー。人気の秘訣と使用方法を徹底解説。tsuri-boonは釣り人による釣りWebサイト。">
   <meta property="og:site_name" content="tsuri-boon">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://tsuri-boon.github.io/lure-gatya/lure-gatya.html">
+  <meta property="og:url" content="https://tsuri-boon.github.io/lure-gatya/rollingbait77.html">
   
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J1YGK5NJLT"></script>
@@ -80,25 +80,24 @@
 <article class="lure-article">
   <h1>ローリングベイト77</h1>
 <div>シーバス界の名作ルアー”ローリングベイト”。<br>
-<!-- ここまで編集済み -->
-これしかないかっとびミノーの名の通り飛距離とアクションの両立が魅力。</div>
+唯一無二のローリングアクションは弱った魚の動きを完全再現。</div>
 
   
-  <img src="../image/blooowin140s.jpg" alt="ブローウィン140S ルアー画像" class="main-image">
+  <img src="../image/ローリングベイト77.jpg" alt="ローリングベイト77 ルアー画像" class="main-image">
 
   <dl class="spec-basic">
-    <dt>メーカー</dt><dd>BlueBlue（ブルーブルー）</dd>
-    <dt>長さ</dt><dd>140mm</dd>
-    <dt>重さ</dt><dd>23g</dd>
-    <dt>タイプ</dt><dd>スローシンキングミノー</dd>
-    <dt>アクション</dt><dd>ウォブンロール</dd>
+    <dt>メーカー</dt><dd>TACLEHOUSE（タックルハウス）</dd>
+    <dt>長さ</dt><dd>77mm</dd>
+    <dt>重さ</dt><dd>15g</dd>
+    <dt>タイプ</dt><dd>シンキングペンシル</dd>
+    <dt>アクション</dt><dd>ローリング</dd>
     <dt>ターゲット<br>魚種</dt><dd>シーバス</dd>
-    <dt>開発者</dt><dd>村岡昌憲</dd>
+    <dt>開発者</dt><dd>坂本智春</dd>
   </dl>
 
-  <h2>ブローウィン140Sの特徴・コンセプト</h2>
+  <h2>ローリングベイト77の特徴・コンセプト</h2>
   <p>
-    ブローウィン140Sは、BlueBlueを代表するミノーで、
+    ローリングベイト77は、タックルハウスの名作ルアーで、シーバス界で数々の釣果を残しています。
     細身のボディにはタングステンウェイトが内蔵されており、
     強風下でも安定した飛距離とアクションを実現する設計が特徴です。<br>
     村岡昌憲氏が開発を手がけ、遠投性能とナチュラルな動きを両立。<br>
