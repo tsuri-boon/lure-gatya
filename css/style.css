@@ -246,6 +246,36 @@ p {
   height: auto;
 }
 
+.btn-recommend {
+  display: block;
+  width: 90%;
+  max-width: 400px;
+  margin: 30px auto;
+  text-align: center;
+  padding: 14px 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg, #0099ff, #00b8ff);
+  border-radius: 40px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 150, 255, 0.3);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.btn-recommend:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 150, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+  .btn-recommend {
+    font-size: 1.1em;
+    width: 95%;
+  }
+}
+
+
 @media (max-width: 768px) {
   .main-image {
     width: 100%; /* スマホでは全幅 */
