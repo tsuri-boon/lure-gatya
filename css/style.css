@@ -248,7 +248,7 @@ p {
 
 .btn-recommend {
   display: block;
-  width: 100%;
+  width: 90%;
   max-width: 400px;
   margin: 30px auto;
   text-align: center;
@@ -271,7 +271,7 @@ p {
 
 @media (max-width: 768px) {
   .btn-recommend {
-    width: 100%;
+    width: 90%;
     max-width: none; /* ✅ スマホで確実に全幅 */
     margin: 20px 0;
   }
