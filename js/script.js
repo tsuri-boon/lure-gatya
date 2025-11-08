@@ -131,16 +131,20 @@ spinBtn.addEventListener("click", () => {
          <div class="maker-url" style="font-size: 14px; margin-bottom:20px;">
          <a href="${selected.url}" target="_blank">${selected.url}</a>
          </div>
-         <div class="lure-card" style="
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      padding: 16px;
-      margin: 0 auto 20px;
-      max-width: 400px;
-      background: #fff;
-      text-align: center;
-    ">
+        <div class="lure-card" style="
+            border: 1px solid #d6dbdf;
+            border-radius: 14px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            padding: 20px 16px;
+            margin: 0 auto 24px;
+            max-width: 420px;
+            background: linear-gradient(135deg, #f4f6f7, #eaeef0);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          "
+          onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 18px rgba(0,0,0,0.12)';"
+          onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.08)';"
+          >
           <div class="lure-image" style="margin-bottom:20px; max-width:400px; height:auto;　display: block; margin: 0 auto;">
           ${randomLure.image}  
           </div>
