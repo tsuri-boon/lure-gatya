@@ -231,8 +231,8 @@ ul.features li {
 }
 
 ul.features li:before {
-  content: "\f0da"; /* Font Awesome 矢印 */
   font-family: "Font Awesome 5 Free";
+  content: "\f0a4"; /* Font Awesome 矢印 */
   font-weight: 900;
   position: absolute;
   left: 0;
