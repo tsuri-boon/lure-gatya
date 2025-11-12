@@ -234,7 +234,7 @@ ul.features li:before {
  font-family: "Font Awesome 5 Free";
   content: "\f0a4";
   position: absolute;
-  left : 1em; /*左端からのアイコンまで*/
+  left : 0; /*左端からのアイコンまで*/
   color: #21b384; /*アイコン色*/
   top: 0.2em;
   font-size: 0.9em;
