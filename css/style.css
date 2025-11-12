@@ -231,11 +231,14 @@ ul.features li {
 }
 
 ul.features li:before {
+  content: "\f0da"; /* Font Awesome 矢印 */
   font-family: "Font Awesome 5 Free";
-  content: "\f0a4";
+  font-weight: 900;
   position: absolute;
-  left : 1em; /*左端からのアイコンまで*/
+  left: 0;
+  top: 0.2em;
   color: #888; /* 控えめグレー */
+  font-size: 0.9em;
 }
 
 ul.features li strong {
