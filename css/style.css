@@ -232,12 +232,11 @@ ul.features li {
 
 ul.features li:before {
  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
   content: "\f0a4";
   position: absolute;
-  left: 0;
+  left : 1em; /*左端からのアイコンまで*/
+  color: #21b384; /*アイコン色*/
   top: 0.2em;
-  color: #888; /* 控えめグレー */
   font-size: 0.9em;
 }
 
