@@ -3,119 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>tsuri-boon｜ルアーガチャ＆ルアー図鑑</title>
-
-  <meta name="description" content="tsuri-boonは釣り人のためのルアーガチャ＆ルアー図鑑Webアプリ。人気ルアーをガチャで楽しみ、図鑑で詳しくチェック。">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="tsuri-boon開発チーム">
-
-  <meta name="application-name" content="tsuri-boon">
-  <meta property="og:site_name" content="tsuri-boon">
-
-  <link rel="canonical" href="https://tsuri-boon.github.io/lure-gatya/">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="tsuri-boon｜ルアーガチャ＆ルアー図鑑">
-  <meta property="og:description" content="人気ルアーをガチャで楽しむ、釣り人のためのWebアプリ。">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://tsuri-boon.github.io/lure-gatya/">
-
-  <!-- 構造化データ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "tsuri-boon",
-    "alternateName": "釣りブーン",
-    "url": "https://tsuri-boon.github.io/lure-gatya/"
-  }
-  </script>
-
-  <link rel="icon" href="../image/tsuriboon_favicon.png" type="image/png">
+  <title>tsuri-boon</title>
   <link rel="stylesheet" href="css/style.css">
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J1YGK5NJLT"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-J1YGK5NJLT');
-  </script>
 </head>
-
 <body>
 
-<!-- ヘッダー -->
-<header class="site-header">
+<header>
   <a href="index.html" class="logo">
-    <img src="image/tsuriboon_logo7.png" alt="tsuri-boon ロゴ">
+    <img src="image/tsuriboon_logo7.png" alt="tsuri-boon">
   </a>
 </header>
 
-<!-- サブナビ -->
-<div class="sub-nav">
-  <nav class="sub-nav-inner">
-    <a href="lure-gatya.html">ルアーガチャ</a>
-    <a href="lures.html">ルアー図鑑</a>
-    <a href="makers.html">メーカー一覧</a>
-    <a href="tsuri-boon.html">tsuri-boonとは</a>
-  </nav>
-</div>
+<!-- HERO -->
+<section class="hero">
+  <h1 class="hero-title">tsuri × boon</h1>
+  <p class="hero-catch">釣り人に、幸運を。</p>
+  <p class="hero-desc">
+    釣り人による<br>
+    釣り人のためのWebプロダクト
+  </p>
+</section>
 
-<!-- メイン -->
+<!-- MAIN CTA -->
 <main class="home-main">
 
-  <!-- ファーストビュー -->
-  <section class="hero">
-    <h1>釣りがもっと楽しくなる。</h1>
-    <p class="hero-lead">
-      ルアーを「回して」「調べる」<br>
-      釣り人のためのルアーWebアプリ
-    </p>
+  <section class="home-cards">
 
-    <div class="hero-cta">
-      <a href="lure-gatya.html" class="cta-button primary">
-        🎰 ルアーガチャを回す
-      </a>
-      <a href="lures.html" class="cta-button secondary">
-        📖 ルアー図鑑を見る
-      </a>
-    </div>
-  </section>
+    <!-- ガチャ -->
+    <a href="lure-gatya.html" class="home-card">
+      <img src="image/home_gacha.jpg" alt="ルアーガチャ">
+      <div class="card-text">
+        <h2>ルアーガチャ</h2>
+        <p>今日の1本を、運に任せて。</p>
+      </div>
+    </a>
 
-  <!-- コンテンツ紹介 -->
-  <section class="features">
-    <div class="feature-card">
-      <h2>🎰 ルアーガチャ</h2>
-      <p>
-        人気メーカーのルアーがランダムで登場。<br>
-        新しい出会いと発見を楽しもう。
-      </p>
-      <a href="lure-gatya.html" class="text-link">ガチャページへ →</a>
-    </div>
+    <!-- 図鑑 -->
+    <a href="lures.html" class="home-card">
+      <img src="image/home_zukan.jpg" alt="ルアー図鑑">
+      <div class="card-text">
+        <h2>ルアー図鑑</h2>
+        <p>スペック・特徴をまとめてチェック。</p>
+      </div>
+    </a>
 
-    <div class="feature-card">
-      <h2>📖 ルアー図鑑</h2>
-      <p>
-        スペック・特徴・用途を一覧で確認。<br>
-        気になるルアーをすぐにチェック。
-      </p>
-      <a href="lures.html" class="text-link">図鑑を見る →</a>
-    </div>
   </section>
 
 </main>
 
-<!-- フッター -->
 <footer>
   <nav class="footer-nav">
-    <a href="index.html">トップ</a>
     <a href="article/privacy.html">プライバシーポリシー</a>
     <a href="form.html">お問い合わせ</a>
   </nav>
-  <p class="copyright">© 2025 tsuri-boon</p>
+  <p>© 2025 tsuri-boon</p>
 </footer>
 
 </body>
