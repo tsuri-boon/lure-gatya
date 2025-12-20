@@ -742,3 +742,24 @@ input, textarea {
     text-align: center;
   }
 }
+
+/* =========================
+   HOME 上書き調整
+========================= */
+
+/* mainの既存paddingを無効化 */
+main.home {
+  padding: 0;
+}
+
+/* 既存h1装飾を無効 */
+.home h1::after {
+  display: none;
+}
+
+/* 既存h2の左ボーダーを無効 */
+.home h2 {
+  border-left: none;
+  padding-left: 0;
+  margin: 0;
+}
