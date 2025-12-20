@@ -592,3 +592,103 @@ input, textarea {
 .form-button:hover {
   background-color: #0077AA;
 }
+
+/* ──────────────── */
+/* ホーム専用：ファーストビュー */
+/* ──────────────── */
+.hero {
+  text-align: center;
+  padding: 60px 20px 40px;
+  background: linear-gradient(180deg, #e6f7fb, #fafafa);
+}
+
+.hero h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  color: #444;
+  margin-bottom: 35px;
+}
+
+/* ──────────────── */
+/* メインCTAエリア */
+/* ──────────────── */
+.cta-area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .cta-area {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CTAカード */
+.cta-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 24px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+.cta-card h2 {
+  border: none;
+  padding: 0;
+  margin: 0 0 12px;
+  font-size: 20px;
+  color: #1F2F54;
+}
+
+.cta-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* CTAボタン */
+.cta-btn {
+  display: inline-block;
+  padding: 12px 26px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(90deg, #0099ff, #00b8ff);
+  box-shadow: 0 4px 12px rgba(0,150,255,0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,150,255,0.45);
+}
+
+/* サブ情報エリア */
+.home-sub {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.home-sub p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
