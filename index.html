@@ -1,62 +1,102 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
   <title>tsuri-boon</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-  <a href="index.html" class="logo">
-    <img src="image/tsuriboon_logo7.png" alt="tsuri-boon">
-  </a>
+  <a href="/" class="logo">tsuri-boon</a>
+  <nav>
+    <a href="/gacha.html">ルアーガチャ</a>
+    <a href="/zukan.html">ルアー図鑑</a>
+  </nav>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <h1 class="hero-title">tsuri × boon</h1>
-  <p class="hero-catch">釣り人に、幸運を。</p>
-  <p class="hero-desc">
-    釣り人による<br>
-    釣り人のためのWebプロダクト
-  </p>
-</section>
+<main class="home">
 
-<!-- MAIN CTA -->
-<main class="home-main">
+  <!-- HERO -->
+  <section class="hero">
+    <h1 class="hero-title">tsuri X boon</h1>
+    <p class="hero-catch">釣り人に幸運を。</p>
+    <p class="hero-desc">
+      釣り人による、釣り人のためのWebサイト。<br>
+      迷ったら、まず回そう。探したくなったら、調べよう。
+    </p>
+  </section>
 
-  <section class="home-cards">
+  <!-- メイン導線 -->
+  <section class="entry-section">
+    <div class="entry-grid">
 
-    <!-- ガチャ -->
-    <a href="lure-gatya.html" class="home-card">
-      <img src="image/home_gacha.jpg" alt="ルアーガチャ">
-      <div class="card-text">
-        <h2>ルアーガチャ</h2>
-        <p>今日の1本を、運に任せて。</p>
+      <a href="/gacha.html" class="entry-card">
+        <img src="image/home_gacha.jpg" alt="ルアーガチャ">
+        <div class="entry-text">
+          <h2>ルアーガチャ</h2>
+          <p>今日投げる一本を、運に任せる。</p>
+        </div>
+      </a>
+
+      <a href="/zukan.html" class="entry-card">
+        <img src="image/home_zukan.jpg" alt="ルアー図鑑">
+        <div class="entry-text">
+          <h2>ルアー図鑑</h2>
+          <p>気になるルアーを、じっくり調べる。</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- おすすめ記事 -->
+  <section class="home-section">
+    <h2 class="home-title">おすすめ記事</h2>
+    <p class="home-subtitle">釣果に直結する読みもの</p>
+
+    <div class="article-cards">
+      <a href="/article/komomo125.html" class="article-card">
+        <img src="image/article_komomo.jpg" alt="">
+        <h3>KOMOMO125の使い方と強さ</h3>
+      </a>
+
+      <a href="/article/narage65.html" class="article-card">
+        <img src="image/article_narage.jpg" alt="">
+        <h3>ナレージ65がハマる条件</h3>
+      </a>
+
+      <a href="/article/blowin.html" class="article-card">
+        <img src="image/article_blowin.jpg" alt="">
+        <h3>ブローウィン125Fはなぜ釣れる？</h3>
+      </a>
+    </div>
+  </section>
+
+  <!-- アフィリエイト -->
+  <section class="home-section gray">
+    <h2 class="home-title">注目ルアー</h2>
+    <p class="home-subtitle">今、1本持っておきたい</p>
+
+    <div class="aff-card">
+      <img src="image/blowin125f.jpg" alt="ブローウィン125F">
+      <div class="aff-text">
+        <h3>ブローウィン125F</h3>
+        <p>
+          飛距離・安定感・実績の三拍子。<br>
+          ガチャでも図鑑でも出番が多い鉄板ルアー。
+        </p>
+        <a href="#" class="btn-recommend">Amazonで見る</a>
       </div>
-    </a>
-
-    <!-- 図鑑 -->
-    <a href="lures.html" class="home-card">
-      <img src="image/home_zukan.jpg" alt="ルアー図鑑">
-      <div class="card-text">
-        <h2>ルアー図鑑</h2>
-        <p>スペック・特徴をまとめてチェック。</p>
-      </div>
-    </a>
-
+    </div>
   </section>
 
 </main>
 
 <footer>
-  <nav class="footer-nav">
-    <a href="article/privacy.html">プライバシーポリシー</a>
-    <a href="form.html">お問い合わせ</a>
-  </nav>
-  <p>© 2025 tsuri-boon</p>
+  <p>© tsuri X boon</p>
 </footer>
 
 </body>
