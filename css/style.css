@@ -661,6 +661,14 @@ input, textarea {
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
+.entry-card img {
+  width: 100%;
+  max-width: 220px;   /* ← ここが重要 */
+  height: auto;
+  display: block;
+  margin: 0 auto 16px;
+}
+
 /* ---------- HOME共通セクション ---------- */
 .home-title {
   text-align: center;
