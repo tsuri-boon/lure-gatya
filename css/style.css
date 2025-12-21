@@ -659,6 +659,8 @@ input, textarea {
   padding: 28px 20px;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  position: relative;
+  display: block;
 }
 
 .entry-card img {
@@ -667,6 +669,14 @@ input, textarea {
   height: auto;
   display: block;
   margin: 0 auto 16px;
+}
+
+.entry-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
 }
 
 /* ---------- HOME共通セクション ---------- */
