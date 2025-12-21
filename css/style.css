@@ -630,55 +630,68 @@ input, textarea {
 
 
 /* ---------- メイン導線（2枠固定） ---------- */
-.entry-grid.two-col {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-@media (max-width: 768px) {
-  .entry-grid.two-col {
-    grid-template-columns: 1fr;
-  }
-}
+/* ────────────── エントリーグリッド ────────────── */
 .entry-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr; /* デフォルトは1列 */
   gap: 32px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
+.entry-grid.two-col {
+  grid-template-columns: repeat(2, 1fr); /* 2列固定 */
+}
+
 @media (max-width: 768px) {
-  .entry-grid {
-    grid-template-columns: 1fr;
+  .entry-grid,
+  .entry-grid.two-col {
+    grid-template-columns: 1fr; /* スマホでは1列 */
   }
 }
 
+/* ────────────── エントリーカード ────────────── */
 .entry-card {
-  background: #fff;
-  border-radius: 24px;
-  padding: 28px 20px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  position: relative;
   display: block;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #111;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.entry-card:hover {
+  transform: translateY(-3px);
 }
 
 .entry-card img {
-  width: 100%;
-  max-width: 220px;   /* ← ここが重要 */
-  height: auto;
   display: block;
-  margin: 0 auto 16px;
+  width: 100%;
+  max-width: 220px;  /* 画像の最大幅 */
+  height: auto;
+  margin: 20px auto 12px;
+  border-radius: 12px;
 }
 
 .entry-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  pointer-events: none;
+  padding: 12px 15px;
+  background: #f9f9f9;
+  position: static; /* 画像の下に配置 */
 }
 
+.entry-text h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.entry-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
 /* ---------- HOME共通セクション ---------- */
 .home-title {
   text-align: center;
