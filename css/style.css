@@ -104,6 +104,26 @@ p {
   color: #555;
 }
 
+#toc {
+  border: 1px solid #ddd;
+  padding: 1em;
+  margin: 1.5em 0;
+}
+
+#toc ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#toc li {
+  margin: 0.4em 0;
+}
+
+#toc a {
+  text-decoration: none;
+}
+
+
 /* 最後の項目だけ線を消す */
 .spec-basic dt:last-of-type,
 .spec-basic dd:last-of-type {
