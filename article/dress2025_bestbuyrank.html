@@ -77,7 +77,7 @@
   
 </head>
 <body>
-
+  
 <!-- ヘッダー -->
 <header>
   <a href="../index.html" class="logo">
@@ -110,6 +110,32 @@
   <p>目次</p>
   <ul></ul>
 </nav>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const toc = document.querySelector("#toc ul");
+  const headings = document.querySelectorAll("h2, h3");
+
+  headings.forEach((heading, index) => {
+    if (!heading.id) {
+      heading.id = "toc-" + index;
+    }
+
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+
+    a.textContent = heading.textContent;
+    a.href = "#" + heading.id;
+
+    if (heading.tagName === "H3") {
+      li.style.marginLeft = "1.5em";
+    }
+
+    li.appendChild(a);
+    toc.appendChild(li);
+  });
+});
+</script>
   
 　 <h2>第10位：サイレントアサシン120Fフラッシュブースト</h2>
    <img src="../image/silentassasin120f.jpg" alt="サイレントアサシン 120F ルアー画像" class="main-image">
