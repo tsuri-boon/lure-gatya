@@ -105,9 +105,11 @@ p {
 }
 
 #toc {
-  border: 1px solid #ddd;
+  border: 1px solid #e0e0e0;
   padding: 1em;
   margin: 1.5em 0;
+  background: rgba(0, 0, 0, 0.03);
+  color: #333;
 }
 
 #toc ul {
@@ -120,7 +122,13 @@ p {
 }
 
 #toc a {
+  color: #333;
   text-decoration: none;
+}
+
+#toc a:hover {
+  color: #0066cc;
+  text-decoration: underline;
 }
 
 
