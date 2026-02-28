@@ -628,7 +628,7 @@ input, textarea {
 /* ---------- HERO ---------- */
 .hero {
   text-align: center;
-  padding: 80px 20px 60px;
+  padding: 40px 20px 40px;
   background: linear-gradient(
     180deg,
     #0099cc 0%,
@@ -639,7 +639,7 @@ input, textarea {
 }
 
 .hero-title {
-  font-size: 42px;
+  font-size: 40px;
   letter-spacing: 0.12em;
   margin-bottom: 10px;
 }
