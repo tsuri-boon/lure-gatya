@@ -94,6 +94,39 @@ BlueBlue・DUO・メガバス・Jacksonなど主要ブランドの最新情報�
     </p>
 
 
+    <!-- 目次を表示したい場所 -->
+<nav id="toc">
+  <p>目次</p>
+  <ul></ul>
+</nav>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const toc = document.querySelector("#toc ul");
+  const headings = document.querySelectorAll("h2, h3");
+
+  headings.forEach((heading, index) => {
+    if (!heading.id) {
+      heading.id = "toc-" + index;
+    }
+
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+
+    a.textContent = heading.textContent;
+    a.href = "#" + heading.id;
+
+    if (heading.tagName === "H3") {
+      li.style.marginLeft = "1.5em";
+    }
+
+    li.appendChild(a);
+    toc.appendChild(li);
+  });
+});
+</script>
+
+    
   <h2>BlueBlue</h2> 
 
     
@@ -357,7 +390,6 @@ BlueBlue・DUO・メガバス・Jacksonなど主要ブランドの最新情報�
    数釣りから大鮎狙いまで可能にするまさに「奥の手」鮎ミノー。
   </p>
   
-
 <p>
 <a href="kiharu75.html">詳しいスペック・使い方はこちら</a>
 </p>
@@ -399,20 +431,103 @@ https://www.duel.co.jp/news/archives/779
     <h2>APIA</h2>
     
     <h3>マスターピース120FL</h3>
+    <img src="../image/masterpiece120fl.jpg" alt="マスターピース120FL" class="main-image">
+   
+    <dl class="spec-basic">
+    <dt>長さ</dt><dd>120 mm</dd>
+    <dt>重さ</dt><dd>16 g</dd>
+    <dt>タイプ</dt><dd>フローティング</dd>
+    <dt>アクション</dt><dd>ウォブンロール</dd>
+    <dt>ターゲット</dt><dd>シーバス</dd>
+    <dt>発売時期</dt><dd>2026年月</dd>
+  </dl>
+    
+  <p>マスターピース120FLは、ロール主体のタイトピッチなウォブンロールアクションが細身のシルエットと相まって、警戒心の強いシーバスにも強くアピール</p>
       
-    <h3>マスターピース120SL</h3>
-      
-    <h3>エルドール85SSL</h3>
-      
-    <h3>マイヨール70SL</h3>
+    <p>
+    <a href="masterpiece120fl.html">詳しいスペック・使い方はこちら</a>
+    </p>
 
+  
+    <h3>マスターピース120SL</h3>
+       <img src="../image/masterpiece120sl.jpg" alt="マスターピース120sL" class="main-image">
+   
+    <dl class="spec-basic">
+    <dt>長さ</dt><dd>120 mm</dd>
+    <dt>重さ</dt><dd>18 g</dd>
+    <dt>タイプ</dt><dd>シンキング</dd>
+    <dt>アクション</dt><dd>ウォブンロール</dd>
+    <dt>ターゲット</dt><dd>シーバス</dd>
+    <dt>発売時期</dt><dd>2026年月</dd>
+  </dl>
+    
+  <p>マスターピース120SLは、優れた遠投性能と流れへの強さを兼ね備えたシンキングモデル。</p>
+      
+    <p>
+    <a href="masterpiece120fl.html">詳しいスペック・使い方はこちら</a>
+    </p>
+
+    <h3>エルドール85SSL</h3>
+      <img src="../image/AILEDORE85SSL.jpg" alt="AILED'ORE85SSL" class="main-image">
+   
+    <dl class="spec-basic">
+    <dt>長さ</dt><dd>85 mm</dd>
+    <dt>重さ</dt><dd>10 g</dd>
+    <dt>タイプ</dt><dd>スローシンキング</dd>
+    <dt>アクション</dt><dd>ウォブンロール</dd>
+    <dt>ターゲット</dt><dd>シーバス</dd>
+    <dt>発売時期</dt><dd>2026年月</dd>
+  </dl>
+    
+  <p>小型ベイトを捕食するタイミングで有効となる。巻いて良し、ロッドアクション良しのオールラウンドミノー。</p>
+      
+    <p>
+    <a href="AILEDORE85SSL.html">詳しいスペック・使い方はこちら</a>
+    </p>
+
+    <h3>マイヨール70SL</h3>
+ 
+    <img src="../image/MAYOL70SL.jpg" alt="マイヨール70" class="main-image">
+   
+    <dl class="spec-basic">
+    <dt>長さ</dt><dd>70 mm</dd>
+    <dt>重さ</dt><dd>8.5 g</dd>
+    <dt>タイプ</dt><dd>シンキング</dd>
+    <dt>アクション</dt><dd>タイトピッチウォブリング</dd>
+    <dt>ターゲット</dt><dd>シーバス</dd>
+    <dt>発売時期</dt><dd>2026年2月</dd>
+  </dl>
+    
+  <p>コンパクトなシルエットで、春先の小型ベイトフィッシュや食い渋った状況への対応力を強化。</p>
+      
+    <p>
+    <a href="mayol70sl.html">詳しいスペック・使い方はこちら</a>
+    </p>
+
+    
     
     <h2>GOTO9</h2>
 
     <h3>SWARM130</h3>
 　
     <img src="../image/swarm130.jpg" alt="swarm130 画像" class="main-image">
-
+   
+    <dl class="spec-basic">
+    <dt>長さ</dt><dd>130 mm</dd>
+    <dt>重さ</dt><dd>12 g</dd>
+    <dt>タイプ</dt><dd>可変フロート</dd>
+    <dt>アクション</dt><dd>バチ抜け</dd>
+    <dt>ターゲット</dt><dd>シーバス</dd>
+    <dt>発売時期</dt><dd>2026年1月</dd>
+  </dl>
+    
+  <p>川バチ攻略に特化したモデル<br>
+  「バチ抜けのど真ん中」を突くのがSWARMシリーズのコンセプト！</p>
+      
+    <p>
+    <a href="swarm130.html">詳しいスペック・使い方はこちら</a>
+    </p>
+        
     
     <h2>JADO PRODUCTS</h2>
 
