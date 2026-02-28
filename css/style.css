@@ -643,6 +643,13 @@ input, textarea {
   letter-spacing: 0.12em;
   margin-bottom: 10px;
 }
+.hero-sub {
+  font-size: 28px;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  opacity: 0.85;
+  display: inline-block;
+}
 
 .hero-catch {
   font-size: 18px;
