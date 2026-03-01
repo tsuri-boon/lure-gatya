@@ -50,6 +50,10 @@
   }
   </script>
 
+
+
+
+  
  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J1YGK5NJLT"></script>
 <script>
@@ -95,11 +99,43 @@ BlueBlue・DUO・メガバス・Jacksonなど主要ブランドの最新情報�
 
 
     <!-- 目次を表示したい場所 -->
-<nav id="toc">
+<details id="toc" class="toc" open>
+  <summary>目次</summary>
+  <ul></ul>
+</details>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const toc = document.querySelector("#toc ul");
+  const headings = document.querySelectorAll("article h2, article h3");
+
+  headings.forEach((heading, index) => {
+    if (!heading.id) {
+      heading.id = "toc-" + index;
+    }
+
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+
+    a.textContent = heading.textContent;
+    a.href = "#" + heading.id;
+
+    if (heading.tagName === "H3") {
+      li.classList.add("toc-h3");
+    }
+
+    li.appendChild(a);
+    toc.appendChild(li);
+  });
+});
+</script>
+
+    <nav id="toc">
   <p>目次</p>
   <ul></ul>
 </nav>
 
+    
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const toc = document.querySelector("#toc ul");
