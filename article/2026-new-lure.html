@@ -120,6 +120,10 @@ document.addEventListener("DOMContentLoaded", function () {
     a.textContent = heading.textContent;
     a.href = "#" + heading.id;
 
+    // ★ ここで区別
+    if (heading.tagName === "H2") {
+      li.classList.add("toc-h2");
+    }
     if (heading.tagName === "H3") {
       li.classList.add("toc-h3");
     }
@@ -129,6 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 </script>
+    
     
   <h2>BlueBlue</h2> 
 
