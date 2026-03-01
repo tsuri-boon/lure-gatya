@@ -338,7 +338,8 @@ ul.features li p {
 .main-image {
   display: block;
   margin: 0 auto;
-  width: 80%; /* PCでは中央寄せ・やや余白あり */
+  width: 100%;
+  max-width: 720px;
   height: auto;
 }
 
