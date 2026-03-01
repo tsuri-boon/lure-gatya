@@ -144,16 +144,6 @@ p {
   display: none;
 }
 
-/* 矢印を自前で表示（任意） */
-#toc summary::before {
-  content: "▸";
-  display: inline-block;
-  margin-right: 0.5em;
-}
-#toc[open] summary::before {
-  content: "▾";
-}
-
 /* --- H2 / H3 の区別 --- */
 #toc li.toc-h2 a {
   font-weight: 700;
