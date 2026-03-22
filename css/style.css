@@ -1100,9 +1100,9 @@ input, textarea {
 }
 
 .encyclopedia-page .lure-card {
-  display: grid;
-  grid-template-columns: 1fr 110px;
-  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   text-decoration: none;
   color: inherit;
   background: #fff;
@@ -1124,40 +1124,11 @@ input, textarea {
   border: 1px dashed #cfd6df;
 }
 
-.encyclopedia-page .lure-card__image-wrap {
-  width: 110px;
-  height: 72px;
-  border-radius: 10px;
-  overflow: hidden;
-  background: #f3f4f6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-self: end;
-  flex-shrink: 0;
-  padding: 4px;
-  box-sizing: border-box;
-}
-
-.encyclopedia-page .lure-card__image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
-
-.encyclopedia-page .lure-card__body {
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.encyclopedia-page .lure-card__topline {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 10px;
+.encyclopedia-page .lure-card__header {
+  display: grid;
+  grid-template-columns: 1fr 110px;
+  gap: 12px;
+  align-items: start;
 }
 
 .encyclopedia-page .lure-card__title-wrap {
@@ -1179,32 +1150,37 @@ input, textarea {
 }
 
 .encyclopedia-page .lure-card__maker {
-  margin: 2px 0 0;
+  margin: 4px 0 0;
   font-size: 0.85rem;
   color: #4c6fae;
 }
 
-.encyclopedia-page .lure-card__desc {
-  margin: 0;
-  font-size: 0.9rem;
-  line-height: 1.55;
-  color: #333;
+.encyclopedia-page .lure-card__image-wrap {
+  width: 110px;
+  height: 72px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: end;
+  padding: 4px;
+  box-sizing: border-box;
+  flex-shrink: 0;
 }
 
-.encyclopedia-page .lure-card__bottomline {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 10px;
-  border-top: 1px solid #eef1f4;
-  padding-top: 8px;
+.encyclopedia-page .lure-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .encyclopedia-page .lure-card__badges {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  justify-content: flex-end;
 }
 
 .encyclopedia-page .badge {
@@ -1232,10 +1208,19 @@ input, textarea {
   color: #5f6b7a;
 }
 
+.encyclopedia-page .lure-card__desc {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #333;
+}
+
 .encyclopedia-page .lure-card__meta {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+  border-top: 1px solid #eef1f4;
+  padding-top: 8px;
 }
 
 .encyclopedia-page .meta-tag {
@@ -1297,19 +1282,14 @@ input, textarea {
 }
 
 @media (max-width: 480px) {
-  .encyclopedia-page .filter-box {
-    padding: 14px;
-  }
-
-  .encyclopedia-page .filter-chip {
-    font-size: 0.8rem;
-    padding: 7px 9px;
-  }
-
   .encyclopedia-page .lure-card {
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .encyclopedia-page .lure-card__header {
     grid-template-columns: 1fr 96px;
     gap: 10px;
-    padding: 10px;
   }
 
   .encyclopedia-page .lure-card__image-wrap {
