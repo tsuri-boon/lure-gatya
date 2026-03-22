@@ -88,6 +88,8 @@
       <button type="button" class="filter-chip" data-filter="新作">新作</button>
       <button type="button" class="filter-chip" data-filter="ready">記事あり</button>
     </div>
+
+     <p id="resultCount" class="result-count">該当件数: 0件</p>
   </section>
 
 
@@ -518,6 +520,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const searchInput = document.getElementById("lureSearch");
   const filterButtons = document.querySelectorAll(".filter-chip");
   const lureItems = document.querySelectorAll(".lure-item");
+  const lureGroups = document.querySelectorAll(".lure-group");
+  const lureSections = document.querySelectorAll(".lure-section");
+  const resultCount = document.getElementById("resultCount");
 
   let activeFilter = "all";
 
@@ -551,11 +556,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function updateList() {
     const keyword = searchInput.value.trim();
+    let visibleCount = 0;
 
+    // カードの表示制御
     lureItems.forEach(item => {
       const visible = matchesFilter(item, activeFilter) && matchesSearch(item, keyword);
       item.classList.toggle("is-hidden", !visible);
+      if (visible) visibleCount += 1;
     });
+
+    // h3グループ単位の表示制御
+    lureGroups.forEach(group => {
+      const visibleItems = group.querySelectorAll(".lure-item:not(.is-hidden)");
+      group.style.display = visibleItems.length ? "" : "none";
+    });
+
+    // h2セクション単位の表示制御
+    lureSections.forEach(section => {
+      const hasVisibleGroup = Array.from(section.querySelectorAll(".lure-group"))
+        .some(group => group.style.display !== "none");
+
+      section.style.display = hasVisibleGroup ? "" : "none";
+    });
+
+    // 件数表示
+    if (visibleCount === 0) {
+      resultCount.textContent = "該当するルアーはありません";
+    } else {
+      resultCount.textContent = `該当件数: ${visibleCount}件`;
+    }
   }
 
   filterButtons.forEach(button => {
@@ -568,8 +597,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   searchInput.addEventListener("input", updateList);
+
+  updateList();
 });
 </script>
 </body>
 </html>
-
