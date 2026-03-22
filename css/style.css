@@ -1020,6 +1020,18 @@ input, textarea {
   background: #fff;
 }
 
+.encyclopedia-page .filter-group {
+  margin-top: 14px;
+}
+
+.encyclopedia-page .filter-group__label {
+  margin: 0 0 8px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #4b5563;
+}
+
+
 .encyclopedia-page .filter-box__search input:focus {
   outline: none;
   border-color: #0099CC;
