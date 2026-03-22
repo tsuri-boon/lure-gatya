@@ -1089,7 +1089,7 @@ input, textarea {
 
 .encyclopedia-page .lure-card {
   display: grid;
-  grid-template-columns: 76px 1fr;
+  grid-template-columns: 1fr 110px;
   gap: 12px;
   text-decoration: none;
   color: inherit;
@@ -1113,21 +1113,24 @@ input, textarea {
 }
 
 .encyclopedia-page .lure-card__image-wrap {
-  width: 76px;
-  height: 76px;
+  width: 110px;
+  height: 72px;
   border-radius: 10px;
   overflow: hidden;
   background: #f3f4f6;
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-self: end;
   flex-shrink: 0;
+  padding: 4px;
+  box-sizing: border-box;
 }
 
 .encyclopedia-page .lure-card__image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
@@ -1154,6 +1157,13 @@ input, textarea {
   margin: 0;
   line-height: 1.4;
   color: #1F2F54;
+}
+
+.encyclopedia-page .lure-card__kana {
+  margin: 2px 0 0;
+  font-size: 0.82rem;
+  color: #6b7280;
+  line-height: 1.4;
 }
 
 .encyclopedia-page .lure-card__maker {
@@ -1285,18 +1295,22 @@ input, textarea {
   }
 
   .encyclopedia-page .lure-card {
-    grid-template-columns: 76px 1fr;
+    grid-template-columns: 1fr 96px;
     gap: 10px;
     padding: 10px;
   }
 
   .encyclopedia-page .lure-card__image-wrap {
-    width: 76px;
-    height: 76px;
+    width: 96px;
+    height: 64px;
   }
 
   .encyclopedia-page .lure-card__name {
     font-size: 0.95rem;
+  }
+
+  .encyclopedia-page .lure-card__kana {
+    font-size: 0.78rem;
   }
 
   .encyclopedia-page .lure-card__desc {
