@@ -79,17 +79,36 @@
       >
     </div>
 
-    <div class="filter-box__tags">
-      <button type="button" class="filter-chip is-active" data-filter="all">すべて</button>
-      <button type="button" class="filter-chip" data-filter="シーバス">シーバス</button>
-      <button type="button" class="filter-chip" data-filter="青物">青物</button>
-      <button type="button" class="filter-chip" data-filter="ミノー">ミノー</button>
-      <button type="button" class="filter-chip" data-filter="シンキングペンシル">シンキングペンシル</button>
-      <button type="button" class="filter-chip" data-filter="新作">新作</button>
-      <button type="button" class="filter-chip" data-filter="ready">記事あり</button>
+    <div class="filter-group">
+      <p class="filter-group__label">魚種ジャンル</p>
+      <div class="filter-box__tags">
+        <button type="button" class="filter-chip is-active" data-filter="all">すべて</button>
+        <button type="button" class="filter-chip" data-filter="シーバス">シーバス</button>
+        <button type="button" class="filter-chip" data-filter="青物">青物</button>
+      </div>
     </div>
 
-     <p id="resultCount" class="result-count">該当件数: 0件</p>
+    <div class="filter-group">
+      <p class="filter-group__label">ルアージャンル</p>
+      <div class="filter-box__tags">
+        <button type="button" class="filter-chip" data-filter="ミノー">ミノー</button>
+        <button type="button" class="filter-chip" data-filter="シャローランナー">シャローランナー</button>
+        <button type="button" class="filter-chip" data-filter="シンキングペンシル">シンキングペンシル</button>
+        <button type="button" class="filter-chip" data-filter="ジグミノー">ジグミノー</button>
+        <button type="button" class="filter-chip" data-filter="メタルジグ">メタルジグ</button>
+        <button type="button" class="filter-chip" data-filter="トップ">トップ</button>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <p class="filter-group__label">その他</p>
+      <div class="filter-box__tags">
+        <button type="button" class="filter-chip" data-filter="新作">新作</button>
+        <button type="button" class="filter-chip" data-filter="ready">記事あり</button>
+      </div>
+    </div>
+
+    <p id="resultCount" class="result-count">該当件数: 0件</p>
   </section>
 
 
@@ -107,35 +126,31 @@
             data-type="ジグミノー"
             data-status="ready">
           <a href="/lure-gatya/article/aeno.html" class="lure-card">
-            <div class="lure-card__body">
-              <div class="lure-card__topline">
-                <div class="lure-card__title-wrap">
-                  <h4 class="lure-card__name">CONTACT AENO.(イーノ)</h4>
-                  <p class="lure-card__kana">イーノ</p>
-                  <p class="lure-card__maker">タックルハウス</p>
-                </div>
-
-                <div class="lure-card__badges">
-                  <span class="badge badge--ready">記事あり</span>
-                </div>
+            <div class="lure-card__header">
+              <div class="lure-card__title-wrap">
+                <h4 class="lure-card__name">CONTACT AENO.(イーノ)</h4>
+                <p class="lure-card__kana">イーノ</p>
+                <p class="lure-card__maker">タックルハウス</p>
               </div>
 
-              <p class="lure-card__desc">
-                元はサクラマス用ジグミノー。でもサワラが釣れると話題。
-              </p>
-
-              <div class="lure-card__bottomline">
-                <div class="lure-card__meta">
-                  <span class="meta-tag">ジグミノー</span>
-<span class="meta-tag">サワラ</span>
-<span class="meta-tag">名作ルアー</span>
-<span class="meta-tag">人気</span>
-                </div>
+              <div class="lure-card__image-wrap">
+                <img src="/lure-gatya/image/aeno.jpg" alt="CONTACT AENO.(イーノ)の画像" class="lure-card__image">
               </div>
             </div>
 
-            <div class="lure-card__image-wrap">
-              <img src="/lure-gatya/image/aeno.jpg" alt="CONTACT AENO.(イーノ)の画像" class="lure-card__image">
+            <div class="lure-card__badges">
+              <span class="badge badge--ready">記事あり</span>
+            </div>
+
+            <p class="lure-card__desc">
+              元はサクラマス用ジグミノー。でもサワラが釣れると話題。
+            </p>
+
+            <div class="lure-card__meta">
+              <span class="meta-tag">ジグミノー</span>
+<span class="meta-tag">サワラ</span>
+<span class="meta-tag">名作ルアー</span>
+<span class="meta-tag">人気</span>
             </div>
     
           </a>
@@ -161,37 +176,33 @@
             data-type="シャローランナー"
             data-status="ready new">
           <a href="/lure-gatya/article/aizer125lillad.html" class="lure-card">
-            <div class="lure-card__body">
-              <div class="lure-card__topline">
-                <div class="lure-card__title-wrap">
-                  <h4 class="lure-card__name">AIZER125LILLAD(アイザー125リラード)</h4>
-                  <p class="lure-card__kana">アイザー125リラード</p>
-                  <p class="lure-card__maker">BlueBlue</p>
-                </div>
-
-                <div class="lure-card__badges">
-                  <span class="badge badge--new">新作</span>
-<span class="badge badge--ready">記事あり</span>
-                </div>
+            <div class="lure-card__header">
+              <div class="lure-card__title-wrap">
+                <h4 class="lure-card__name">AIZER125LILLAD(アイザー125リラード)</h4>
+                <p class="lure-card__kana">アイザー125リラード</p>
+                <p class="lure-card__maker">BlueBlue</p>
               </div>
 
-              <p class="lure-card__desc">
-                ウェイトアップ版ミノー。飛距離と存在感を両立しやすいモデル。
-              </p>
+              <div class="lure-card__image-wrap">
+                <img src="/lure-gatya/image/aizer125lillad.jpg" alt="AIZER125LILLAD(アイザー125リラード)の画像" class="lure-card__image">
+              </div>
+            </div>
 
-              <div class="lure-card__bottomline">
-                <div class="lure-card__meta">
-                  <span class="meta-tag">シャローランナー</span>
+            <div class="lure-card__badges">
+              <span class="badge badge--new">新作</span>
+<span class="badge badge--ready">記事あり</span>
+            </div>
+
+            <p class="lure-card__desc">
+              ウェイトアップ版ミノー。飛距離と存在感を両立しやすいモデル。
+            </p>
+
+            <div class="lure-card__meta">
+              <span class="meta-tag">シャローランナー</span>
 <span class="meta-tag">125mm</span>
 <span class="meta-tag">シーバス</span>
 <span class="meta-tag">飛距離重視</span>
 <span class="meta-tag">人気</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="lure-card__image-wrap">
-              <img src="/lure-gatya/image/aizer125lillad.jpg" alt="AIZER125LILLAD(アイザー125リラード)の画像" class="lure-card__image">
             </div>
     
           </a>
@@ -205,36 +216,32 @@
             data-type="シャローランナー"
             data-status="ready">
           <a href="/lure-gatya/article/komomosf125.html" class="lure-card">
-            <div class="lure-card__body">
-              <div class="lure-card__topline">
-                <div class="lure-card__title-wrap">
-                  <h4 class="lure-card__name">KOMOMO SF-125</h4>
-                  <p class="lure-card__kana">コモモ125</p>
-                  <p class="lure-card__maker">ima</p>
-                </div>
-
-                <div class="lure-card__badges">
-                  <span class="badge badge--ready">記事あり</span>
-                </div>
+            <div class="lure-card__header">
+              <div class="lure-card__title-wrap">
+                <h4 class="lure-card__name">KOMOMO SF-125</h4>
+                <p class="lure-card__kana">コモモ125</p>
+                <p class="lure-card__maker">ima</p>
               </div>
 
-              <p class="lure-card__desc">
-                シャロー帯のシーバスへのアプローチに特化した性能
-              </p>
+              <div class="lure-card__image-wrap">
+                <img src="/lure-gatya/image/komomo125.jpg" alt="KOMOMO SF-125の画像" class="lure-card__image">
+              </div>
+            </div>
 
-              <div class="lure-card__bottomline">
-                <div class="lure-card__meta">
-                  <span class="meta-tag">シャローランナー</span>
+            <div class="lure-card__badges">
+              <span class="badge badge--ready">記事あり</span>
+            </div>
+
+            <p class="lure-card__desc">
+              シャロー帯のシーバスへのアプローチに特化した性能
+            </p>
+
+            <div class="lure-card__meta">
+              <span class="meta-tag">シャローランナー</span>
 <span class="meta-tag">シーバス</span>
 <span class="meta-tag">シャロー</span>
 <span class="meta-tag">名作ルアー</span>
 <span class="meta-tag">エース級</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="lure-card__image-wrap">
-              <img src="/lure-gatya/image/komomo125.jpg" alt="KOMOMO SF-125の画像" class="lure-card__image">
             </div>
     
           </a>
@@ -254,34 +261,30 @@
             data-type="シンキングペンシル"
             data-status="ready">
           <a href="/lure-gatya/article/sobat80.html" class="lure-card">
-            <div class="lure-card__body">
-              <div class="lure-card__topline">
-                <div class="lure-card__title-wrap">
-                  <h4 class="lure-card__name">sobat80</h4>
-                  <p class="lure-card__kana">ソバット80</p>
-                  <p class="lure-card__maker">ima</p>
-                </div>
-
-                <div class="lure-card__badges">
-                  <span class="badge badge--ready">記事あり</span>
-                </div>
+            <div class="lure-card__header">
+              <div class="lure-card__title-wrap">
+                <h4 class="lure-card__name">sobat80</h4>
+                <p class="lure-card__kana">ソバット80</p>
+                <p class="lure-card__maker">ima</p>
               </div>
 
-              <p class="lure-card__desc">
-                シンペンにもミノーにもなるオールラウンダー
-              </p>
-
-              <div class="lure-card__bottomline">
-                <div class="lure-card__meta">
-                  <span class="meta-tag">シンペン</span>
-<span class="meta-tag">シーバス</span>
-<span class="meta-tag">名作ルアー</span>
-                </div>
+              <div class="lure-card__image-wrap">
+                <img src="/lure-gatya/image/sobat80.jpg" alt="sobat80の画像" class="lure-card__image">
               </div>
             </div>
 
-            <div class="lure-card__image-wrap">
-              <img src="/lure-gatya/image/sobat80.jpg" alt="sobat80の画像" class="lure-card__image">
+            <div class="lure-card__badges">
+              <span class="badge badge--ready">記事あり</span>
+            </div>
+
+            <p class="lure-card__desc">
+              シンペンにもミノーにもなるオールラウンダー
+            </p>
+
+            <div class="lure-card__meta">
+              <span class="meta-tag">シンペン</span>
+<span class="meta-tag">シーバス</span>
+<span class="meta-tag">名作ルアー</span>
             </div>
     
           </a>
@@ -295,36 +298,32 @@
             data-type="シンキングペンシル"
             data-status="ready new">
           <a href="/lure-gatya/article/sobat100.html" class="lure-card">
-            <div class="lure-card__body">
-              <div class="lure-card__topline">
-                <div class="lure-card__title-wrap">
-                  <h4 class="lure-card__name">sobat100</h4>
-                  <p class="lure-card__kana">ソバット100</p>
-                  <p class="lure-card__maker">ima</p>
-                </div>
-
-                <div class="lure-card__badges">
-                  <span class="badge badge--new">新作</span>
-<span class="badge badge--ready">記事あり</span>
-                </div>
+            <div class="lure-card__header">
+              <div class="lure-card__title-wrap">
+                <h4 class="lure-card__name">sobat100</h4>
+                <p class="lure-card__kana">ソバット100</p>
+                <p class="lure-card__maker">ima</p>
               </div>
 
-              <p class="lure-card__desc">
-                名作シンペンのサイズアップ版が登場！遠投性能が高く、大場所でもなんのその！
-              </p>
-
-              <div class="lure-card__bottomline">
-                <div class="lure-card__meta">
-                  <span class="meta-tag">シンペン</span>
-<span class="meta-tag">シーバス</span>
-<span class="meta-tag">新作</span>
-<span class="meta-tag">飛距離</span>
-                </div>
+              <div class="lure-card__image-wrap">
+                <img src="/lure-gatya/image/sobat100.jpg" alt="sobat100の画像" class="lure-card__image">
               </div>
             </div>
 
-            <div class="lure-card__image-wrap">
-              <img src="/lure-gatya/image/sobat100.jpg" alt="sobat100の画像" class="lure-card__image">
+            <div class="lure-card__badges">
+              <span class="badge badge--new">新作</span>
+<span class="badge badge--ready">記事あり</span>
+            </div>
+
+            <p class="lure-card__desc">
+              名作シンペンのサイズアップ版が登場！遠投性能が高く、大場所でもなんのその！
+            </p>
+
+            <div class="lure-card__meta">
+              <span class="meta-tag">シンペン</span>
+<span class="meta-tag">シーバス</span>
+<span class="meta-tag">新作</span>
+<span class="meta-tag">飛距離</span>
             </div>
     
           </a>
@@ -338,37 +337,33 @@
             data-type="シンキングペンシル"
             data-status="ready">
           <a href="/lure-gatya/article/manic115.html" class="lure-card">
-            <div class="lure-card__body">
-              <div class="lure-card__topline">
-                <div class="lure-card__title-wrap">
-                  <h4 class="lure-card__name">BayRUF MANIC115</h4>
-                  <p class="lure-card__kana">マニック115</p>
-                  <p class="lure-card__maker">DUO</p>
-                </div>
-
-                <div class="lure-card__badges">
-                  <span class="badge badge--ready">記事あり</span>
-                </div>
+            <div class="lure-card__header">
+              <div class="lure-card__title-wrap">
+                <h4 class="lure-card__name">BayRUF MANIC115</h4>
+                <p class="lure-card__kana">マニック115</p>
+                <p class="lure-card__maker">DUO</p>
               </div>
 
-              <p class="lure-card__desc">
-                名作バチ抜けルアー。飛距離とアクションが両立。
-              </p>
+              <div class="lure-card__image-wrap">
+                <img src="/lure-gatya/image/manic.jpg" alt="BayRUF MANIC115の画像" class="lure-card__image">
+              </div>
+            </div>
 
-              <div class="lure-card__bottomline">
-                <div class="lure-card__meta">
-                  <span class="meta-tag">シンペン</span>
+            <div class="lure-card__badges">
+              <span class="badge badge--ready">記事あり</span>
+            </div>
+
+            <p class="lure-card__desc">
+              名作バチ抜けルアー。飛距離とアクションが両立。
+            </p>
+
+            <div class="lure-card__meta">
+              <span class="meta-tag">シンペン</span>
 <span class="meta-tag">シーバス</span>
 <span class="meta-tag">名作ルアー</span>
 <span class="meta-tag">バチ</span>
 <span class="meta-tag">飛距離</span>
 <span class="meta-tag">エース級</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="lure-card__image-wrap">
-              <img src="/lure-gatya/image/manic.jpg" alt="BayRUF MANIC115の画像" class="lure-card__image">
             </div>
     
           </a>
@@ -382,35 +377,31 @@
             data-type="シンキングペンシル"
             data-status="ready">
           <a href="/lure-gatya/article/rollingbait77.html" class="lure-card">
-            <div class="lure-card__body">
-              <div class="lure-card__topline">
-                <div class="lure-card__title-wrap">
-                  <h4 class="lure-card__name">ROLLING BAIT77</h4>
-                  <p class="lure-card__kana">ローリングベイト77</p>
-                  <p class="lure-card__maker">タックルハウス</p>
-                </div>
-
-                <div class="lure-card__badges">
-                  <span class="badge badge--ready">記事あり</span>
-                </div>
+            <div class="lure-card__header">
+              <div class="lure-card__title-wrap">
+                <h4 class="lure-card__name">ROLLING BAIT77</h4>
+                <p class="lure-card__kana">ローリングベイト77</p>
+                <p class="lure-card__maker">タックルハウス</p>
               </div>
 
-              <p class="lure-card__desc">
-                唯一無二のローリングアクションは弱った魚の動きを完全再現。
-              </p>
-
-              <div class="lure-card__bottomline">
-                <div class="lure-card__meta">
-                  <span class="meta-tag">シンペン</span>
-<span class="meta-tag">シーバス</span>
-<span class="meta-tag">名作ルアー</span>
-<span class="meta-tag">エース級</span>
-                </div>
+              <div class="lure-card__image-wrap">
+                <img src="/lure-gatya/image/ローリングベイト77.jpg" alt="ROLLING BAIT77の画像" class="lure-card__image">
               </div>
             </div>
 
-            <div class="lure-card__image-wrap">
-              <img src="/lure-gatya/image/ローリングベイト77.jpg" alt="ROLLING BAIT77の画像" class="lure-card__image">
+            <div class="lure-card__badges">
+              <span class="badge badge--ready">記事あり</span>
+            </div>
+
+            <p class="lure-card__desc">
+              唯一無二のローリングアクションは弱った魚の動きを完全再現。
+            </p>
+
+            <div class="lure-card__meta">
+              <span class="meta-tag">シンペン</span>
+<span class="meta-tag">シーバス</span>
+<span class="meta-tag">名作ルアー</span>
+<span class="meta-tag">エース級</span>
             </div>
     
           </a>
@@ -424,35 +415,31 @@
             data-type="シンキングペンシル"
             data-status="ready new">
           <a href="/lure-gatya/article/swarm130.html" class="lure-card">
-            <div class="lure-card__body">
-              <div class="lure-card__topline">
-                <div class="lure-card__title-wrap">
-                  <h4 class="lure-card__name">SWARM130</h4>
-                  <p class="lure-card__kana">スウォーム130</p>
-                  <p class="lure-card__maker">GOTO9</p>
-                </div>
-
-                <div class="lure-card__badges">
-                  <span class="badge badge--new">新作</span>
-<span class="badge badge--ready">記事あり</span>
-                </div>
+            <div class="lure-card__header">
+              <div class="lure-card__title-wrap">
+                <h4 class="lure-card__name">SWARM130</h4>
+                <p class="lure-card__kana">スウォーム130</p>
+                <p class="lure-card__maker">GOTO9</p>
               </div>
 
-              <p class="lure-card__desc">
-                バチ抜けで活躍するように考えられた設計の新バチルアー
-              </p>
-
-              <div class="lure-card__bottomline">
-                <div class="lure-card__meta">
-                  <span class="meta-tag">バチ</span>
-<span class="meta-tag">シーバス</span>
-<span class="meta-tag">河川</span>
-                </div>
+              <div class="lure-card__image-wrap">
+                <img src="/lure-gatya/image/swarm130.jpg" alt="SWARM130の画像" class="lure-card__image">
               </div>
             </div>
 
-            <div class="lure-card__image-wrap">
-              <img src="/lure-gatya/image/swarm130.jpg" alt="SWARM130の画像" class="lure-card__image">
+            <div class="lure-card__badges">
+              <span class="badge badge--new">新作</span>
+<span class="badge badge--ready">記事あり</span>
+            </div>
+
+            <p class="lure-card__desc">
+              バチ抜けで活躍するように考えられた設計の新バチルアー
+            </p>
+
+            <div class="lure-card__meta">
+              <span class="meta-tag">バチ</span>
+<span class="meta-tag">シーバス</span>
+<span class="meta-tag">河川</span>
             </div>
     
           </a>
@@ -466,35 +453,31 @@
             data-type="シンキングペンシル"
             data-status="coming">
           <div class="lure-card lure-card--coming">
-            <div class="lure-card__body">
-              <div class="lure-card__topline">
-                <div class="lure-card__title-wrap">
-                  <h4 class="lure-card__name">SWARM80</h4>
-                  <p class="lure-card__kana">スウォーム80</p>
-                  <p class="lure-card__maker">GOTO9</p>
-                </div>
-
-                <div class="lure-card__badges">
-                  <span class="badge badge--coming">準備中</span>
-                </div>
+            <div class="lure-card__header">
+              <div class="lure-card__title-wrap">
+                <h4 class="lure-card__name">SWARM80</h4>
+                <p class="lure-card__kana">スウォーム80</p>
+                <p class="lure-card__maker">GOTO9</p>
               </div>
 
-              <p class="lure-card__desc">
-                バチ抜けで活躍するように考えられた設計の新バチルアー
-              </p>
-
-              <div class="lure-card__bottomline">
-                <div class="lure-card__meta">
-                  <span class="meta-tag">バチ</span>
-<span class="meta-tag">シーバス</span>
-<span class="meta-tag">港湾</span>
-<span class="meta-tag">人気</span>
-                </div>
+              <div class="lure-card__image-wrap">
+                <img src="/lure-gatya/image/swarm80.jpg" alt="SWARM80の画像" class="lure-card__image">
               </div>
             </div>
 
-            <div class="lure-card__image-wrap">
-              <img src="/lure-gatya/image/swarm80.jpg" alt="SWARM80の画像" class="lure-card__image">
+            <div class="lure-card__badges">
+              <span class="badge badge--coming">準備中</span>
+            </div>
+
+            <p class="lure-card__desc">
+              バチ抜けで活躍するように考えられた設計の新バチルアー
+            </p>
+
+            <div class="lure-card__meta">
+              <span class="meta-tag">バチ</span>
+<span class="meta-tag">シーバス</span>
+<span class="meta-tag">港湾</span>
+<span class="meta-tag">人気</span>
             </div>
     
           </div>
@@ -514,36 +497,32 @@
             data-type="ジグヘッドワーム"
             data-status="ready">
           <a href="/lure-gatya/article/VJ16.html" class="lure-card">
-            <div class="lure-card__body">
-              <div class="lure-card__topline">
-                <div class="lure-card__title-wrap">
-                  <h4 class="lure-card__name">VJ16</h4>
-                  <p class="lure-card__kana">ブイジェー16</p>
-                  <p class="lure-card__maker">Coreman</p>
-                </div>
-
-                <div class="lure-card__badges">
-                  <span class="badge badge--ready">記事あり</span>
-                </div>
+            <div class="lure-card__header">
+              <div class="lure-card__title-wrap">
+                <h4 class="lure-card__name">VJ16</h4>
+                <p class="lure-card__kana">ブイジェー16</p>
+                <p class="lure-card__maker">Coreman</p>
               </div>
 
-              <p class="lure-card__desc">
-                シーバス界No.1ワームルアー。
-              </p>
+              <div class="lure-card__image-wrap">
+                <img src="/lure-gatya/image/vj16.jpg" alt="VJ16の画像" class="lure-card__image">
+              </div>
+            </div>
 
-              <div class="lure-card__bottomline">
-                <div class="lure-card__meta">
-                  <span class="meta-tag">ワーム</span>
+            <div class="lure-card__badges">
+              <span class="badge badge--ready">記事あり</span>
+            </div>
+
+            <p class="lure-card__desc">
+              シーバス界No.1ワームルアー。
+            </p>
+
+            <div class="lure-card__meta">
+              <span class="meta-tag">ワーム</span>
 <span class="meta-tag">ジグヘッドワーム</span>
 <span class="meta-tag">シーバス</span>
 <span class="meta-tag">エース級</span>
 <span class="meta-tag">名作ルアー</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="lure-card__image-wrap">
-              <img src="/lure-gatya/image/vj16.jpg" alt="VJ16の画像" class="lure-card__image">
             </div>
     
           </a>
@@ -563,35 +542,31 @@
             data-type="バイブレーション"
             data-status="ready">
           <a href="/lure-gatya/article/narage65.html" class="lure-card">
-            <div class="lure-card__body">
-              <div class="lure-card__topline">
-                <div class="lure-card__title-wrap">
-                  <h4 class="lure-card__name">narage65</h4>
-                  <p class="lure-card__kana">ナレージ65</p>
-                  <p class="lure-card__maker">BlueBlue</p>
-                </div>
-
-                <div class="lure-card__badges">
-                  <span class="badge badge--ready">記事あり</span>
-                </div>
+            <div class="lure-card__header">
+              <div class="lure-card__title-wrap">
+                <h4 class="lure-card__name">narage65</h4>
+                <p class="lure-card__kana">ナレージ65</p>
+                <p class="lure-card__maker">BlueBlue</p>
               </div>
 
-              <p class="lure-card__desc">
-                シーバス界屈指のバイブレーションルアー。使いやすさに定評。
-              </p>
-
-              <div class="lure-card__bottomline">
-                <div class="lure-card__meta">
-                  <span class="meta-tag">バイブレーション</span>
-<span class="meta-tag">シーバス</span>
-<span class="meta-tag">エース級</span>
-<span class="meta-tag">名作ルアー</span>
-                </div>
+              <div class="lure-card__image-wrap">
+                <img src="/lure-gatya/image/narage65.jpg" alt="narage65の画像" class="lure-card__image">
               </div>
             </div>
 
-            <div class="lure-card__image-wrap">
-              <img src="/lure-gatya/image/narage65.jpg" alt="narage65の画像" class="lure-card__image">
+            <div class="lure-card__badges">
+              <span class="badge badge--ready">記事あり</span>
+            </div>
+
+            <p class="lure-card__desc">
+              シーバス界屈指のバイブレーションルアー。使いやすさに定評。
+            </p>
+
+            <div class="lure-card__meta">
+              <span class="meta-tag">バイブレーション</span>
+<span class="meta-tag">シーバス</span>
+<span class="meta-tag">エース級</span>
+<span class="meta-tag">名作ルアー</span>
             </div>
     
           </a>
@@ -605,34 +580,30 @@
             data-type="バイブレーション"
             data-status="ready">
           <a href="/lure-gatya/article/maliera68s.html" class="lure-card">
-            <div class="lure-card__body">
-              <div class="lure-card__topline">
-                <div class="lure-card__title-wrap">
-                  <h4 class="lure-card__name">MALIERA68S</h4>
-                  <p class="lure-card__kana">マリエラ68S</p>
-                  <p class="lure-card__maker">TREFLE CREATION</p>
-                </div>
-
-                <div class="lure-card__badges">
-                  <span class="badge badge--ready">記事あり</span>
-                </div>
+            <div class="lure-card__header">
+              <div class="lure-card__title-wrap">
+                <h4 class="lure-card__name">MALIERA68S</h4>
+                <p class="lure-card__kana">マリエラ68S</p>
+                <p class="lure-card__maker">TREFLE CREATION</p>
               </div>
 
-              <p class="lure-card__desc">
-                「魚に嫌われない」がコンセプト。話題のバイブレーション
-              </p>
-
-              <div class="lure-card__bottomline">
-                <div class="lure-card__meta">
-                  <span class="meta-tag">バイブレーション</span>
-<span class="meta-tag">シーバス</span>
-<span class="meta-tag">人気</span>
-                </div>
+              <div class="lure-card__image-wrap">
+                <img src="/lure-gatya/image/maliera68s.jpg" alt="MALIERA68Sの画像" class="lure-card__image">
               </div>
             </div>
 
-            <div class="lure-card__image-wrap">
-              <img src="/lure-gatya/image/maliera68s.jpg" alt="MALIERA68Sの画像" class="lure-card__image">
+            <div class="lure-card__badges">
+              <span class="badge badge--ready">記事あり</span>
+            </div>
+
+            <p class="lure-card__desc">
+              「魚に嫌われない」がコンセプト。話題のバイブレーション
+            </p>
+
+            <div class="lure-card__meta">
+              <span class="meta-tag">バイブレーション</span>
+<span class="meta-tag">シーバス</span>
+<span class="meta-tag">人気</span>
             </div>
     
           </a>
@@ -652,37 +623,33 @@
             data-type="ミノー"
             data-status="ready new">
           <a href="/lure-gatya/article/pzvn105f.html" class="lure-card">
-            <div class="lure-card__body">
-              <div class="lure-card__topline">
-                <div class="lure-card__title-wrap">
-                  <h4 class="lure-card__name">PZ-VN105F</h4>
-                  <p class="lure-card__kana">ピーゼットブイエヌ105</p>
-                  <p class="lure-card__maker">POZIDRIVE Garage</p>
-                </div>
-
-                <div class="lure-card__badges">
-                  <span class="badge badge--new">新作</span>
-<span class="badge badge--ready">記事あり</span>
-                </div>
+            <div class="lure-card__header">
+              <div class="lure-card__title-wrap">
+                <h4 class="lure-card__name">PZ-VN105F</h4>
+                <p class="lure-card__kana">ピーゼットブイエヌ105</p>
+                <p class="lure-card__maker">POZIDRIVE Garage</p>
               </div>
 
-              <p class="lure-card__desc">
-                万能なコンパクトミノーで、強い流れのあるフィールドでもよい動き。
-              </p>
+              <div class="lure-card__image-wrap">
+                <img src="/lure-gatya/image/pzvn105f.jpg" alt="PZ-VN105Fの画像" class="lure-card__image">
+              </div>
+            </div>
 
-              <div class="lure-card__bottomline">
-                <div class="lure-card__meta">
-                  <span class="meta-tag">ミノー</span>
+            <div class="lure-card__badges">
+              <span class="badge badge--new">新作</span>
+<span class="badge badge--ready">記事あり</span>
+            </div>
+
+            <p class="lure-card__desc">
+              万能なコンパクトミノーで、強い流れのあるフィールドでもよい動き。
+            </p>
+
+            <div class="lure-card__meta">
+              <span class="meta-tag">ミノー</span>
 <span class="meta-tag">フローティング</span>
 <span class="meta-tag">シーバス</span>
 <span class="meta-tag">磯</span>
 <span class="meta-tag">サーフ</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="lure-card__image-wrap">
-              <img src="/lure-gatya/image/pzvn105f.jpg" alt="PZ-VN105Fの画像" class="lure-card__image">
             </div>
     
           </a>
@@ -696,36 +663,32 @@
             data-type="ミノー"
             data-status="ready">
           <a href="/lure-gatya/article/blooowin140s.html" class="lure-card">
-            <div class="lure-card__body">
-              <div class="lure-card__topline">
-                <div class="lure-card__title-wrap">
-                  <h4 class="lure-card__name">Blooowin140s</h4>
-                  <p class="lure-card__kana">ブローウィン140</p>
-                  <p class="lure-card__maker">BlueBlue</p>
-                </div>
-
-                <div class="lure-card__badges">
-                  <span class="badge badge--ready">記事あり</span>
-                </div>
+            <div class="lure-card__header">
+              <div class="lure-card__title-wrap">
+                <h4 class="lure-card__name">Blooowin140s</h4>
+                <p class="lure-card__kana">ブローウィン140</p>
+                <p class="lure-card__maker">BlueBlue</p>
               </div>
 
-              <p class="lure-card__desc">
-                かっとびミノーでオープンエリアで大活躍。
-              </p>
+              <div class="lure-card__image-wrap">
+                <img src="/lure-gatya/image/blooowin140s.jpg" alt="Blooowin140sの画像" class="lure-card__image">
+              </div>
+            </div>
 
-              <div class="lure-card__bottomline">
-                <div class="lure-card__meta">
-                  <span class="meta-tag">ミノー</span>
+            <div class="lure-card__badges">
+              <span class="badge badge--ready">記事あり</span>
+            </div>
+
+            <p class="lure-card__desc">
+              かっとびミノーでオープンエリアで大活躍。
+            </p>
+
+            <div class="lure-card__meta">
+              <span class="meta-tag">ミノー</span>
 <span class="meta-tag">シーバス</span>
 <span class="meta-tag">飛距離</span>
 <span class="meta-tag">エース級</span>
 <span class="meta-tag">人気</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="lure-card__image-wrap">
-              <img src="/lure-gatya/image/blooowin140s.jpg" alt="Blooowin140sの画像" class="lure-card__image">
             </div>
     
           </a>
@@ -739,35 +702,31 @@
             data-type="ミノー"
             data-status="ready">
           <a href="/lure-gatya/article/blooowin110s.html" class="lure-card">
-            <div class="lure-card__body">
-              <div class="lure-card__topline">
-                <div class="lure-card__title-wrap">
-                  <h4 class="lure-card__name">Blooowin110S</h4>
-                  <p class="lure-card__kana">ブローウィン110</p>
-                  <p class="lure-card__maker">BlueBlue</p>
-                </div>
-
-                <div class="lure-card__badges">
-                  <span class="badge badge--ready">記事あり</span>
-                </div>
+            <div class="lure-card__header">
+              <div class="lure-card__title-wrap">
+                <h4 class="lure-card__name">Blooowin110S</h4>
+                <p class="lure-card__kana">ブローウィン110</p>
+                <p class="lure-card__maker">BlueBlue</p>
               </div>
 
-              <p class="lure-card__desc">
-                小型になってもブローウィン特有のS字アクション。
-              </p>
-
-              <div class="lure-card__bottomline">
-                <div class="lure-card__meta">
-                  <span class="meta-tag">ミノー</span>
-<span class="meta-tag">シーバス</span>
-<span class="meta-tag">飛距離</span>
-<span class="meta-tag">人気</span>
-                </div>
+              <div class="lure-card__image-wrap">
+                <img src="/lure-gatya/image/blooowin110s.jpg" alt="Blooowin110Sの画像" class="lure-card__image">
               </div>
             </div>
 
-            <div class="lure-card__image-wrap">
-              <img src="/lure-gatya/image/blooowin110s.jpg" alt="Blooowin110Sの画像" class="lure-card__image">
+            <div class="lure-card__badges">
+              <span class="badge badge--ready">記事あり</span>
+            </div>
+
+            <p class="lure-card__desc">
+              小型になってもブローウィン特有のS字アクション。
+            </p>
+
+            <div class="lure-card__meta">
+              <span class="meta-tag">ミノー</span>
+<span class="meta-tag">シーバス</span>
+<span class="meta-tag">飛距離</span>
+<span class="meta-tag">人気</span>
             </div>
     
           </a>
@@ -781,35 +740,31 @@
             data-type="ミノー"
             data-status="ready">
           <a href="/lure-gatya/article/blooowin110j.html" class="lure-card">
-            <div class="lure-card__body">
-              <div class="lure-card__topline">
-                <div class="lure-card__title-wrap">
-                  <h4 class="lure-card__name">Blooowin110J</h4>
-                  <p class="lure-card__kana">ブローウィン110</p>
-                  <p class="lure-card__maker">BlueBlue</p>
-                </div>
-
-                <div class="lure-card__badges">
-                  <span class="badge badge--ready">記事あり</span>
-                </div>
+            <div class="lure-card__header">
+              <div class="lure-card__title-wrap">
+                <h4 class="lure-card__name">Blooowin110J</h4>
+                <p class="lure-card__kana">ブローウィン110</p>
+                <p class="lure-card__maker">BlueBlue</p>
               </div>
 
-              <p class="lure-card__desc">
-                ブローウィン110のジャーキングモデル。イベントなどでの限定販売モデル。
-              </p>
-
-              <div class="lure-card__bottomline">
-                <div class="lure-card__meta">
-                  <span class="meta-tag">ミノー</span>
-<span class="meta-tag">シーバス</span>
-<span class="meta-tag">飛距離</span>
-<span class="meta-tag">イベント限定</span>
-                </div>
+              <div class="lure-card__image-wrap">
+                <img src="/lure-gatya/image/blooowin110j.jpg" alt="Blooowin110Jの画像" class="lure-card__image">
               </div>
             </div>
 
-            <div class="lure-card__image-wrap">
-              <img src="/lure-gatya/image/blooowin110j.jpg" alt="Blooowin110Jの画像" class="lure-card__image">
+            <div class="lure-card__badges">
+              <span class="badge badge--ready">記事あり</span>
+            </div>
+
+            <p class="lure-card__desc">
+              ブローウィン110のジャーキングモデル。イベントなどでの限定販売モデル。
+            </p>
+
+            <div class="lure-card__meta">
+              <span class="meta-tag">ミノー</span>
+<span class="meta-tag">シーバス</span>
+<span class="meta-tag">飛距離</span>
+<span class="meta-tag">イベント限定</span>
             </div>
     
           </a>
@@ -823,35 +778,31 @@
             data-type="ミノー"
             data-status="ready">
           <a href="/lure-gatya/article/blooowin167f-shallow.html" class="lure-card">
-            <div class="lure-card__body">
-              <div class="lure-card__topline">
-                <div class="lure-card__title-wrap">
-                  <h4 class="lure-card__name">Blooowin167F-shallow</h4>
-                  <p class="lure-card__kana">ブローウィン167F-シャロー</p>
-                  <p class="lure-card__maker">BlueBlue</p>
-                </div>
-
-                <div class="lure-card__badges">
-                  <span class="badge badge--ready">記事あり</span>
-                </div>
+            <div class="lure-card__header">
+              <div class="lure-card__title-wrap">
+                <h4 class="lure-card__name">Blooowin167F-shallow</h4>
+                <p class="lure-card__kana">ブローウィン167F-シャロー</p>
+                <p class="lure-card__maker">BlueBlue</p>
               </div>
 
-              <p class="lure-card__desc">
-                ブローウィンシリーズ唯一のシャローモデル。遠方での食わせ能力。
-              </p>
-
-              <div class="lure-card__bottomline">
-                <div class="lure-card__meta">
-                  <span class="meta-tag">ミノー</span>
-<span class="meta-tag">シーバス</span>
-<span class="meta-tag">飛距離</span>
-<span class="meta-tag">シャロー</span>
-                </div>
+              <div class="lure-card__image-wrap">
+                <img src="/lure-gatya/image/blooowin167f.jpg" alt="Blooowin167F-shallowの画像" class="lure-card__image">
               </div>
             </div>
 
-            <div class="lure-card__image-wrap">
-              <img src="/lure-gatya/image/blooowin167f.jpg" alt="Blooowin167F-shallowの画像" class="lure-card__image">
+            <div class="lure-card__badges">
+              <span class="badge badge--ready">記事あり</span>
+            </div>
+
+            <p class="lure-card__desc">
+              ブローウィンシリーズ唯一のシャローモデル。遠方での食わせ能力。
+            </p>
+
+            <div class="lure-card__meta">
+              <span class="meta-tag">ミノー</span>
+<span class="meta-tag">シーバス</span>
+<span class="meta-tag">飛距離</span>
+<span class="meta-tag">シャロー</span>
             </div>
     
           </a>
@@ -865,34 +816,30 @@
             data-type="ミノー"
             data-status="coming">
           <div class="lure-card lure-card--coming">
-            <div class="lure-card__body">
-              <div class="lure-card__topline">
-                <div class="lure-card__title-wrap">
-                  <h4 class="lure-card__name">Blooowin165F-slim</h4>
-                  <p class="lure-card__kana">ブローウィン165F-スリム</p>
-                  <p class="lure-card__maker">BlueBlue</p>
-                </div>
-
-                <div class="lure-card__badges">
-                  <span class="badge badge--coming">準備中</span>
-                </div>
+            <div class="lure-card__header">
+              <div class="lure-card__title-wrap">
+                <h4 class="lure-card__name">Blooowin165F-slim</h4>
+                <p class="lure-card__kana">ブローウィン165F-スリム</p>
+                <p class="lure-card__maker">BlueBlue</p>
               </div>
 
-              <p class="lure-card__desc">
-                ブローウィンシリーズ最大サイズ。
-              </p>
-
-              <div class="lure-card__bottomline">
-                <div class="lure-card__meta">
-                  <span class="meta-tag">ミノー</span>
-<span class="meta-tag">シーバス</span>
-<span class="meta-tag">飛距離</span>
-                </div>
+              <div class="lure-card__image-wrap">
+                <img src="/lure-gatya/image/blooowin165f.jpg" alt="Blooowin165F-slimの画像" class="lure-card__image">
               </div>
             </div>
 
-            <div class="lure-card__image-wrap">
-              <img src="/lure-gatya/image/blooowin165f.jpg" alt="Blooowin165F-slimの画像" class="lure-card__image">
+            <div class="lure-card__badges">
+              <span class="badge badge--coming">準備中</span>
+            </div>
+
+            <p class="lure-card__desc">
+              ブローウィンシリーズ最大サイズ。
+            </p>
+
+            <div class="lure-card__meta">
+              <span class="meta-tag">ミノー</span>
+<span class="meta-tag">シーバス</span>
+<span class="meta-tag">飛距離</span>
             </div>
     
           </div>
@@ -956,20 +903,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const keyword = searchInput.value.trim();
     let visibleCount = 0;
 
-    // カードの表示制御
     lureItems.forEach(item => {
       const visible = matchesFilter(item, activeFilter) && matchesSearch(item, keyword);
       item.classList.toggle("is-hidden", !visible);
       if (visible) visibleCount += 1;
     });
 
-    // h3グループ単位の表示制御
     lureGroups.forEach(group => {
       const visibleItems = group.querySelectorAll(".lure-item:not(.is-hidden)");
       group.style.display = visibleItems.length ? "" : "none";
     });
 
-    // h2セクション単位の表示制御
     lureSections.forEach(section => {
       const hasVisibleGroup = Array.from(section.querySelectorAll(".lure-group"))
         .some(group => group.style.display !== "none");
@@ -977,7 +921,6 @@ document.addEventListener("DOMContentLoaded", function () {
       section.style.display = hasVisibleGroup ? "" : "none";
     });
 
-    // 件数表示
     if (visibleCount === 0) {
       resultCount.textContent = "該当するルアーはありません";
     } else {
