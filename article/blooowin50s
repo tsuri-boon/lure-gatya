@@ -188,7 +188,7 @@
     <!-- 手動編集エリア end -->
 
     <h2 id="colors">人気カラー</h2>
-    <!-- 手動編集エリア start -->
+    <p>オンライン限定カラー含めて15色がラインナップ。その中でもオススメカラーを厳選して紹介します。</p>
     <div class="color-gallery">
         <div class="color-item">
         <img src="../image/blooowin50s_mgh.jpg" alt="ブローウィン50S マットグローヘッド">
