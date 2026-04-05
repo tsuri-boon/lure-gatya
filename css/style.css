@@ -988,6 +988,57 @@ input, textarea {
   clear: both;
 }
 
+.spec-cta {
+  margin: 18px 0 28px;
+  padding: 14px;
+  background: #f8fcff;
+  border: 1px solid #d9edf7;
+  border-radius: 12px;
+}
+
+.spec-cta .kaerebalink-box {
+  padding-bottom: 0 !important;
+  font-size: 13px !important;
+}
+
+.spec-cta .kaerebalink-image img {
+  max-width: 90px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.spec-cta .kaerebalink-name a {
+  font-weight: 700;
+  color: #222;
+  text-decoration: none;
+}
+
+.spec-cta .kaerebalink-powered-date {
+  display: none;
+}
+
+.spec-cta .kaerebalink-link1 {
+  margin-top: 8px !important;
+}
+
+.spec-cta .kaerebalink-link1 a {
+  display: inline-block;
+  margin: 4px 6px 0 0;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #eef8fd;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  color: #0077a3;
+}
+
+.spec-cta .kaerebalink-link1 a:hover {
+  background: #dff2fb;
+}
+
+
+
 /* =========================
    ルアー図鑑ページ
 ========================= */
