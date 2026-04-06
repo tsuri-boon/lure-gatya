@@ -1406,3 +1406,73 @@ input, textarea {
     font-size: 0.85rem;
   }
 }
+
+.mini-tool-card {
+  display: block;
+  max-width: 420px;
+  margin: 24px auto;
+  padding: 16px 18px;
+  border-radius: 18px;
+  text-decoration: none;
+  color: #222;
+  background: linear-gradient(135deg, #f5fcff 0%, #eef9ff 100%);
+  border: 1px solid rgba(0, 153, 204, 0.14);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.mini-tool-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 153, 204, 0.28);
+}
+
+.mini-tool-badge {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #0099cc;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.mini-tool-content h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.mini-tool-content p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.mini-tool-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #0099cc;
+}
+
+@media (max-width: 768px) {
+  .mini-tool-card {
+    margin: 18px 16px;
+    padding: 14px 15px;
+    border-radius: 16px;
+  }
+
+  .mini-tool-content h3 {
+    font-size: 16px;
+  }
+
+  .mini-tool-content p,
+  .mini-tool-link {
+    font-size: 12px;
+  }
+}
