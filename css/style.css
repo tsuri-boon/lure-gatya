@@ -343,9 +343,38 @@ ul.features li p {
   height: auto;
 }
 
+.sub-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.sub-image-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sub-image-group img {
+  width: 48%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
 @media (max-width: 768px) {
   .main-image {
     width: 100%; /* スマホでは全幅 */
+  }
+}
+
+@media (max-width: 768px) {
+  .sub-image-group img {
+    width: 100%;
   }
 }
 
