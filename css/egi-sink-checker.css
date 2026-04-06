@@ -1,0 +1,437 @@
+/* =============================================
+   egi-sink-checker.css
+   既存の style.css に影響しないよう
+   すべてのクラスに .egi- / .checker- プレフィックスを付けています。
+   ============================================= */
+
+/* ---------- Google Fonts ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap');
+
+/* ---------- ヒーローバナー ---------- */
+.egi-hero {
+  position: relative;
+  margin: 0 -1rem 2rem;
+  padding: 3rem 1.5rem 2.5rem;
+  background: #0a3d6b;
+  overflow: hidden;
+  text-align: center;
+}
+
+.egi-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 200'%3E%3Cpath fill='%23ffffff08' d='M0,80 C200,140 400,20 600,80 C800,140 1000,20 1200,80 L1200,200 L0,200Z'/%3E%3Cpath fill='%23ffffff05' d='M0,120 C200,60 400,160 600,120 C800,60 1000,160 1200,120 L1200,200 L0,200Z'/%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.egi-hero::after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 220px; height: 100%;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 8px,
+    rgba(255,200,0,.07) 8px,
+    rgba(255,200,0,.07) 16px
+  );
+  pointer-events: none;
+}
+
+.egi-hero-eyebrow {
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.6875rem;
+  letter-spacing: 0.2em;
+  color: #ffd000;
+  background: rgba(255,208,0,.12);
+  border: 1px solid rgba(255,208,0,.35);
+  border-radius: 3px;
+  padding: 3px 10px;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+.egi-hero h1 {
+  font-family: 'Oswald', 'Noto Sans JP', sans-serif;
+  font-size: clamp(1.6rem, 5vw, 2.4rem);
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  margin: 0 0 0.625rem;
+  position: relative;
+}
+
+.egi-hero-sub {
+  font-size: 0.8125rem;
+  color: rgba(255,255,255,.65);
+  position: relative;
+}
+
+.egi-hero-deco {
+  position: absolute;
+  bottom: -10px; right: 16px;
+  font-size: 5rem;
+  opacity: .08;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ---------- 目次 ---------- */
+#toc {
+  border: none;
+  background: #f0f7ff;
+  border-left: 4px solid #0a6dc2;
+  border-radius: 0 8px 8px 0;
+  padding: 0.75rem 1rem;
+  margin-bottom: 2rem;
+}
+#toc summary { font-weight: 700; color: #0a3d6b; cursor: pointer; font-size: 0.875rem; }
+#toc ul { margin: 0.5rem 0 0 1rem; }
+#toc li { margin: 0.25rem 0; }
+#toc a  { color: #0a6dc2; font-size: 0.875rem; }
+
+/* ---------- セクション見出し (h2) ---------- */
+.lure-article h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Oswald', 'Noto Sans JP', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0a3d6b;
+  border-bottom: 3px solid #0a3d6b;
+  padding-bottom: 6px;
+  margin: 2rem 0 1rem;
+}
+
+.lure-article h2::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 1.1em;
+  background: #ffd000;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.lure-article h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a4f8a;
+  border-left: 3px solid #ffd000;
+  padding-left: 8px;
+  margin: 1.5rem 0 0.5rem;
+}
+
+/* ---------- チェッカーカード ---------- */
+.checker-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(10,61,107,.12), 0 1px 4px rgba(10,61,107,.08);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.checker-card-header {
+  background: linear-gradient(135deg, #0a3d6b 60%, #1565c0);
+  padding: 1rem 1.25rem 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checker-card-icon { font-size: 1.5rem; line-height: 1; }
+
+.checker-card-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+
+.checker-card-body { padding: 1.25rem; }
+
+/* ---------- セレクター ---------- */
+.checker-selectors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 480px) {
+  .checker-selectors { grid-template-columns: 1fr; }
+}
+
+.checker-sel-group { display: flex; flex-direction: column; gap: 4px; }
+
+.checker-sel-label {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: #0a3d6b;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.checker-sel-group select {
+  width: 100%;
+  padding: 9px 32px 9px 11px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  border: 2px solid #c8d8ea;
+  border-radius: 8px;
+  background: #f5f9ff;
+  color: #1a1a2e;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%230a3d6b' stroke-width='1.8' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 11px center;
+  transition: border-color .15s, box-shadow .15s;
+}
+
+.checker-sel-group select:hover:not(:disabled) { border-color: #0a6dc2; }
+.checker-sel-group select:focus { outline: none; border-color: #0a6dc2; box-shadow: 0 0 0 3px rgba(10,109,194,.18); }
+.checker-sel-group select:disabled { opacity: 0.38; cursor: not-allowed; background: #eef2f7; }
+
+/* ---------- プレースホルダー ---------- */
+.checker-placeholder {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #aab8cc;
+  font-size: 0.875rem;
+  border: 2px dashed #c8d8ea;
+  border-radius: 10px;
+  line-height: 1.8;
+}
+
+/* ---------- 結果カード ---------- */
+.checker-result {
+  animation: resultIn .25s cubic-bezier(.34,1.56,.64,1);
+}
+
+@keyframes resultIn {
+  from { opacity: 0; transform: scale(.97) translateY(6px); }
+  to   { opacity: 1; transform: scale(1)   translateY(0); }
+}
+
+.result-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 1rem;
+  padding-bottom: 0.875rem;
+  border-bottom: 2px dashed #e0eaf5;
+}
+
+.result-meta { font-size: 0.6875rem; color: #7a90aa; margin-bottom: 3px; }
+
+.result-name {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0a3d6b;
+  line-height: 1.2;
+}
+
+.result-badge {
+  flex-shrink: 0;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 99px;
+  background: #fff3cd;
+  color: #7a5a00;
+  border: 1px solid #f0d060;
+  white-space: nowrap;
+}
+
+/* ---------- メトリクス ---------- */
+.result-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 1.125rem;
+}
+
+.result-metric {
+  background: #f0f7ff;
+  border-radius: 10px;
+  padding: 0.625rem 0.5rem;
+  text-align: center;
+  border: 1.5px solid #d0e4f5;
+}
+
+.result-metric-label {
+  font-size: 0.625rem;
+  font-weight: 700;
+  color: #4a6a8a;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.result-metric-value {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0a3d6b;
+  line-height: 1;
+}
+
+.result-metric-unit {
+  font-family: inherit;
+  font-size: 0.625rem;
+  font-weight: 400;
+  color: #7a90aa;
+  margin-left: 1px;
+}
+
+/* ---------- 沈下バー ---------- */
+.sink-section { margin-bottom: 1.125rem; }
+
+.sink-label-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.625rem;
+  color: #9ab0c8;
+  margin-bottom: 5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.sink-label-center { font-size: 0.75rem; color: #0a3d6b; font-weight: 700; }
+
+.sink-track {
+  position: relative;
+  height: 12px;
+  background: #e0eaf5;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.sink-track-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, #1565c0, #29b6f6, #81d4fa);
+  opacity: .18;
+}
+
+.sink-fill {
+  position: relative;
+  height: 100%;
+  border-radius: 6px;
+  background: linear-gradient(to right, #1565c0, #29b6f6);
+  transition: width .5s cubic-bezier(.4,0,.2,1);
+}
+
+.sink-fill::after {
+  content: '';
+  position: absolute;
+  top: 2px; right: 4px;
+  width: 6px; height: 4px;
+  background: rgba(255,255,255,.55);
+  border-radius: 3px;
+}
+
+.sink-note {
+  font-size: 0.625rem;
+  color: #9ab0c8;
+  margin-top: 4px;
+  text-align: right;
+}
+
+/* ---------- 沈下速度データなし ---------- */
+.sink-nodata {
+  margin-bottom: 1.125rem;
+  padding: 0.625rem 0.875rem;
+  background: #f5f7fa;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  color: #7a90aa;
+  border: 1px dashed #c8d8ea;
+  text-align: center;
+}
+
+/* ---------- アフィリエイトボタン ---------- */
+.affiliate-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  padding: 11px 16px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-family: inherit;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: filter .15s, transform .1s;
+  background: linear-gradient(135deg, #ff8c00, #ffd000);
+  color: #1a1a00;
+}
+
+.affiliate-btn:hover  { filter: brightness(1.07); transform: translateY(-1px); }
+.affiliate-btn:active { transform: translateY(0); }
+
+.affiliate-btn.no-link {
+  background: #eef2f7;
+  color: #aab8cc;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  cursor: default;
+}
+.affiliate-btn.no-link:hover { filter: none; transform: none; }
+
+/* ---------- ガイドテーブル ---------- */
+.sink-guide-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8125rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(10,61,107,.08);
+}
+
+.sink-guide-table thead tr { background: #0a3d6b; color: #fff; }
+.sink-guide-table th { padding: 8px 12px; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.04em; }
+.sink-guide-table td { padding: 8px 12px; border-bottom: 1px solid #e0eaf5; line-height: 1.5; }
+.sink-guide-table tbody tr:nth-child(even) { background: #f5f9ff; }
+.sink-guide-table tbody tr:last-child td  { border-bottom: none; }
+
+.type-pill {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 99px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+}
+.type-pill.deep    { background: #0a3d6b; color: #fff; }
+.type-pill.basic   { background: #1565c0; color: #fff; }
+.type-pill.shallow { background: #29b6f6; color: #fff; }
+.type-pill.super   { background: #e0f4ff; color: #0a3d6b; border: 1px solid #90caf9; }
+
+/* ---------- ヒントボックス ---------- */
+.tip-box {
+  background: #fffbea;
+  border: 1.5px solid #ffd000;
+  border-radius: 10px;
+  padding: 0.875rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: #4a3a00;
+  margin: 1rem 0;
+}
+.tip-box strong { color: #7a5a00; }
