@@ -435,3 +435,18 @@
   margin: 1rem 0;
 }
 .tip-box strong { color: #7a5a00; }
+
+/* ---------- アフィリエイト画像ラップ ---------- */
+.affiliate-img-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.affiliate-img-wrap img {
+  max-width: 200px;
+  height: auto;
+  display: block;
+}
+
