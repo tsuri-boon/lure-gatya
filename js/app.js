@@ -91,7 +91,7 @@
     /* アフィリエイト表示：affiliate_urlにHTMLタグがそのまま入っているのでinnerHTMLで出力 */
     var affHtml = item.affiliate_url
       ? '<div class="affiliate-img-wrap">' + item.affiliate_url + '</div>'
-      : '<div class="affiliate-btn no-link">画像準備中</div>';
+      : '<div class="affiliate-btn no-link">アフィリエイトリンク未設定</div>';
 
     resultEl.innerHTML =
       '<div class="checker-result">' +
