@@ -439,9 +439,12 @@
 /* ---------- アフィリエイト画像ラップ ---------- */
 .affiliate-img-wrap {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 0.5rem;
+  gap: 10px;
+  margin-top: 0.75rem;
+  text-align: center;
 }
 
 .affiliate-img-wrap img {
@@ -451,11 +454,14 @@
 }
 
 .affiliate-img-wrap::before {
-  content: '🛒 気になった方はこちらからチェック！';
+  content: none;
+}
+
+.affiliate-img-wrap::after {
+  content: '🛒 気になる方はこちら';
   display: block;
-  text-align: center;
   font-size: 0.8125rem;
   font-weight: 700;
   color: #0a3d6b;
-  margin-bottom: 0.5rem;
+  line-height: 1.5;
 }
