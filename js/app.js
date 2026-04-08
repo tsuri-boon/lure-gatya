@@ -88,10 +88,10 @@
         '</div>';
     }
 
-    /* アフィリエイトボタン */
+    /* アフィリエイト表示：affiliate_urlにHTMLタグがそのまま入っているのでinnerHTMLで出力 */
     var affHtml = item.affiliate_url
-      ? '<a class="affiliate-btn" href="' + item.affiliate_url + '" target="_blank" rel="noopener noreferrer">🛒 Amazonで見る ↗</a>'
-      : '<div class="affiliate-btn no-link">アフィリエイトリンク未設定</div>';
+      ? '<div class="affiliate-img-wrap">' + item.affiliate_url + '</div>'
+      : '<div class="affiliate-btn no-link">画像準備中</div>';
 
     resultEl.innerHTML =
       '<div class="checker-result">' +
