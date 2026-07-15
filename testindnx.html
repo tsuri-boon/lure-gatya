@@ -159,6 +159,7 @@ img{max-width:100%}
     <div class="card" id="card"></div>
     <div class="dots" id="dots"></div>
     <div class="hint">&#8249; スワイプで7日先まで &#8250;</div>
+    <div id="wxdbg" style="text-align:center;font-size:10px;color:#c23e11;margin-top:6px;font-weight:700"></div>
   </div>
 
   <div class="block">
@@ -188,12 +189,27 @@ async function loadWeather(){
     const u=`https://api.open-meteo.com/v1/forecast?latitude=${MUKO.lat}&longitude=${MUKO.lon}`
       +`&daily=weather_code,temperature_2m_max,temperature_2m_min,wind_speed_10m_max,wind_direction_10m_dominant`
       +`&timezone=Asia%2FTokyo&forecast_days=7`;
-    const r=await fetch(u); if(!r.ok)throw 0;
-    const j=await r.json(),d=j.daily; WX={};
+    const r=await fetch(u);
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    const j=await r.json(),d=j.daily;
+    if(!d||!d.time)throw new Error('no daily in response');
+    WX={};
     d.time.forEach((t,i)=>{WX[t]={code:d.weather_code[i],tmax:Math.round(d.temperature_2m_max[i]),
       tmin:Math.round(d.temperature_2m_min[i]),wind:Math.round(d.wind_speed_10m_max[i]),wdir:d.wind_direction_10m_dominant[i]};});
+    console.log('[weather] 取得成功', Object.keys(WX));
+    const dbg=document.getElementById('wxdbg');
+    if(dbg){
+      const td=todayJST(), has=WX[td]?'あり':'なし';
+      dbg.style.color=WX[td]?'#1f7a4d':'#c23e11';
+      dbg.textContent=`天気取得OK / アプリの今日=${td} / その日の予報=${has} / 予報範囲=${Object.keys(WX)[0]}〜${Object.keys(WX).slice(-1)[0]}`;
+    }
     card();
-  }catch(e){WX='fail';card();}
+  }catch(e){
+    console.error('[weather] 失敗:', e.message);
+    WX='fail'; card();
+    const dbg=document.getElementById('wxdbg');
+    if(dbg)dbg.textContent='天気取得エラー: '+e.message;
+  }
 }
 function windDir(deg){const dd=['北','北東','東','南東','南','南西','西','北西'];return dd[Math.round(deg/45)%8];}
 const CFG={
@@ -215,7 +231,13 @@ function rank(i){
 }
 function moon(ma){const l=Math.abs(Math.cos(ma/29.53*2*Math.PI)),p=Math.round(l*100);
   return `<span class="moon" style="background:radial-gradient(circle,#FFC53D 0%,#FFC53D ${p}%,#dfeef4 ${p}%)"></span>`;}
-function si(rows){const t=new Date().toISOString().slice(0,10);const i=rows.findIndex(r=>r.d>=t);return i<0?0:i;}
+function todayJST(){
+  // 日本時間の今日の日付(YYYY-MM-DD)。UTCだと早朝に前日になるのを防ぐ
+  const now=new Date();
+  const jst=new Date(now.getTime()+(now.getTimezoneOffset()+540)*60000);
+  return jst.getFullYear()+'-'+String(jst.getMonth()+1).padStart(2,'0')+'-'+String(jst.getDate()).padStart(2,'0');
+}
+function si(rows){const t=todayJST();const i=rows.findIndex(r=>r.d>=t);return i<0?0:i;}
 function wxHtml(r){
   const cfg=CFG[K];
   const wx=(WX&&WX!=='fail')?WX[r.d]:null;
