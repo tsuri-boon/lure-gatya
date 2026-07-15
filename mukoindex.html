@@ -197,11 +197,17 @@ async function loadWeather(){
       tmin:Math.round(d.temperature_2m_min[i]),wind:Math.round(d.wind_speed_10m_max[i]),wdir:d.wind_direction_10m_dominant[i]};});
     card();
   }catch(e){
-    console.error('[weather] 失敗:', e.message);
     WX='fail'; card();
   }
 }
 function windDir(deg){const dd=['北','北東','東','南東','南','南西','西','北西'];return dd[Math.round(deg/45)%8];}
+function calLimitJST(){
+  const now=new Date();
+  const j=new Date(now.getTime()+(now.getTimezoneOffset()+540)*60000);
+  // 今月から3ヶ月先の月末まで（計4ヶ月分）
+  const end=new Date(j.getFullYear(), j.getMonth()+4, 0); // 翌々々月の0日=3ヶ月先の月末
+  return end.getFullYear()+'-'+String(end.getMonth()+1).padStart(2,'0')+'-'+String(end.getDate()).padStart(2,'0');
+}
 const CFG={
   buri:{c:'#1FA9A0',sp:['ツバス','ハマチ','メジロ','ブリ'],
     col:{'ツバス':'#7ECFC8','ハマチ':'#FF6B35','メジロ':'#1FA9A0','ブリ':'#143246'},
@@ -277,7 +283,7 @@ function card(){
   document.getElementById('next').disabled=cur>=6||!rows[base+cur+1];
 }
 function cal(){
-  const cfg=CFG[K],rows=D[K],lim=D.calLimit,months={};
+  const cfg=CFG[K],rows=D[K],lim=calLimitJST(),months={};
   rows.forEach(r=>{if(r.d>lim)return;const k=r.d.slice(0,7);(months[k]=months[k]||[]).push(r);});
   let h='';
   Object.entries(months).forEach(([k,rs])=>{
