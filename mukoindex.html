@@ -188,12 +188,18 @@ async function loadWeather(){
     const u=`https://api.open-meteo.com/v1/forecast?latitude=${MUKO.lat}&longitude=${MUKO.lon}`
       +`&daily=weather_code,temperature_2m_max,temperature_2m_min,wind_speed_10m_max,wind_direction_10m_dominant`
       +`&timezone=Asia%2FTokyo&forecast_days=7`;
-    const r=await fetch(u); if(!r.ok)throw 0;
-    const j=await r.json(),d=j.daily; WX={};
+    const r=await fetch(u);
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    const j=await r.json(),d=j.daily;
+    if(!d||!d.time)throw new Error('no daily in response');
+    WX={};
     d.time.forEach((t,i)=>{WX[t]={code:d.weather_code[i],tmax:Math.round(d.temperature_2m_max[i]),
       tmin:Math.round(d.temperature_2m_min[i]),wind:Math.round(d.wind_speed_10m_max[i]),wdir:d.wind_direction_10m_dominant[i]};});
     card();
-  }catch(e){WX='fail';card();}
+  }catch(e){
+    console.error('[weather] 失敗:', e.message);
+    WX='fail'; card();
+  }
 }
 function windDir(deg){const dd=['北','北東','東','南東','南','南西','西','北西'];return dd[Math.round(deg/45)%8];}
 const CFG={
@@ -215,21 +221,29 @@ function rank(i){
 }
 function moon(ma){const l=Math.abs(Math.cos(ma/29.53*2*Math.PI)),p=Math.round(l*100);
   return `<span class="moon" style="background:radial-gradient(circle,#FFC53D 0%,#FFC53D ${p}%,#dfeef4 ${p}%)"></span>`;}
-function si(rows){const t=new Date().toISOString().slice(0,10);const i=rows.findIndex(r=>r.d>=t);return i<0?0:i;}
+function todayJST(){
+  // 日本時間の今日の日付(YYYY-MM-DD)。UTCだと早朝に前日になるのを防ぐ
+  const now=new Date();
+  const jst=new Date(now.getTime()+(now.getTimezoneOffset()+540)*60000);
+  return jst.getFullYear()+'-'+String(jst.getMonth()+1).padStart(2,'0')+'-'+String(jst.getDate()).padStart(2,'0');
+}
+function si(rows){const t=todayJST();const i=rows.findIndex(r=>r.d>=t);return i<0?0:i;}
 function wxHtml(r){
+  const cfg=CFG[K];
   const wx=(WX&&WX!=='fail')?WX[r.d]:null;
+  const tide=`<div class="it"><div class="k">潮回り</div><div class="v" style="color:${cfg.c}">${r.t}</div></div>`;
+  let temp,weather;
   if(wx){
     const w=WMO[wx.code]||{t:'—',i:'·'};
-    return `
-      <div class="it"><div class="k">天気</div><div class="wx">${w.i}</div><div class="wxt">${w.t}</div></div>
-      <div class="it"><div class="k">気温</div><div class="v">${wx.tmax}°<span style="color:var(--c-sub);font-size:12px">/${wx.tmin}°</span></div></div>
-      <div class="it"><div class="k">風</div><div class="v">${windDir(wx.wdir)} ${wx.wind}</div><div class="wxt" style="color:var(--c-sub)">m/s</div></div>`;
+    temp=`<div class="it"><div class="k">気温</div><div class="v">${wx.tmax}°<span style="color:var(--c-sub);font-size:12px">/${wx.tmin}°</span></div></div>`;
+    weather=`<div class="it"><div class="k">天気</div><div class="wx">${w.i}</div><div class="wxt">${w.t}</div></div>`;
+  }else{
+    // 取得前・失敗・8日目以降
+    const dash=(WX==='fail'||WX===null)?'…':'—';
+    temp=`<div class="it"><div class="k">気温</div><div class="v" style="color:var(--c-sub)">${dash}</div></div>`;
+    weather=`<div class="it"><div class="k">天気</div><div class="v" style="color:var(--c-sub)">${dash}</div></div>`;
   }
-  // 予報が無い日（8日目以降）や取得失敗時は潮回り/月齢にフォールバック
-  return `
-      <div class="it"><div class="k">潮回り</div><div class="v" style="color:${CFG[K].c}">${r.t}</div></div>
-      <div class="it"><div class="k">月齢</div><div class="v">${moon(r.m)}${r.m}</div></div>
-      <div class="it"><div class="k">曜日</div><div class="v">${r.w}</div></div>`;
+  return tide+temp+weather;
 }
 function card(){
   const cfg=CFG[K],rows=D[K],base=si(rows),r=rows[base+cur];
