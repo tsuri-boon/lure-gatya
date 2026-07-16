@@ -161,7 +161,7 @@ img{max-width:100%}
   <div class="hero">
     <span class="hero-badge">約4万件のデータから算出！</span>
     <h1>武庫川一文字 青物指数</h1>
-    <div class="lede">ブリ・サワラの「釣れる日」を、データで先読み</div>
+    <div class="lede">武庫川一文字で、ブリやサワラが「釣れる日」をデータで先読み</div>
   </div>
 
   <div class="tabs">
@@ -251,10 +251,10 @@ const CFG={
 let K='buri',cur=0;
 const WD=['日','月','火','水','木','金','土'];
 function rank(i){
-  if(i>=80)return['絶好','この時期で最上位クラスの条件'];
+  if(i>=80)return['絶好','爆釣予報!この時期で最高の条件'];
   if(i>=60)return['狙い目','条件は整っている'];
   if(i>=40)return['ふつう','悪くはない'];
-  if(i>=20)return['渋め','条件はいまひとつ'];
+  if(i>=20)return['玄人向け','条件はいまひとつ'];
   return['低調','この時期の底'];
 }
 function moon(ma){const l=Math.abs(Math.cos(ma/29.53*2*Math.PI)),p=Math.round(l*100);
