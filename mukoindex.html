@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-<title>武庫川一文字 青物指数｜tsuri-boon</title>
+<title>釣れる日がわかる！？武庫川一文字（ムコイチ）青物指数｜tsuri-boon</title>
 <meta name="description" content="武庫川一文字のブリ・サワラが釣れる日を指数化。42,371件の釣果データから今日〜7日先を先読み。">
 <link rel="icon" href="image/tsuriboon_favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -153,6 +153,33 @@ img{max-width:100%}
 .article-tag{position:absolute;top:8px;left:8px;background:var(--c-yellow);border:2px solid var(--c-ink);
   font-size:10.5px;font-weight:800;padding:2px 9px;border-radius:999px;transform:rotate(-2deg)}
 .article-card h3{font-size:12.5px;font-weight:800;line-height:1.5;margin:0;padding:10px 12px 13px}
+
+/* 解説ガイド（囲いなし・読み物） */
+.guide{margin-top:40px;padding:0 4px}
+.guide-lead-h{font-size:19px;font-weight:800;color:var(--c-ink);line-height:1.5;margin-bottom:14px;
+  text-shadow:1px 1px 0 #fff}
+.guide-lead{font-size:14.5px;font-weight:500;line-height:2;margin:12px 0}
+.guide h2{font-size:18px;font-weight:800;color:var(--c-ink);margin:32px 0 12px;padding-left:12px;
+  border-left:5px solid var(--c-brand);line-height:1.5}
+.guide p{font-size:14px;font-weight:500;line-height:2;margin:12px 0;color:var(--c-ink)}
+.guide b{font-weight:800;color:var(--c-ink)}
+.guide-spec{margin:16px 0;padding:0;list-style:none;background:#fff;border:2px solid var(--c-ink);
+  border-radius:12px;box-shadow:var(--pop-sm);overflow:hidden}
+.guide-spec li{font-size:13px;font-weight:500;line-height:1.75;padding:11px 14px 11px 38px;position:relative;
+  border-bottom:1px dashed #d9e6ec}
+.guide-spec li::before{content:"✓";position:absolute;left:13px;top:11px;font-weight:800;color:var(--c-brand)}
+.guide-spec li:last-child{border-bottom:none}
+.guide-cta{margin-top:22px;padding:14px 16px;background:var(--c-sky);border:2px solid var(--c-ink);
+  border-radius:12px;font-size:13px!important;font-weight:700!important}
+.guide-cta a{color:var(--c-brand);font-weight:800;text-decoration:underline}
+ 
+/* Xでシェア */
+.share-row{text-align:center;margin-top:16px}
+.xshare{display:inline-flex;align-items:center;gap:8px;background:var(--c-ink);color:#fff;
+  border:var(--line);border-radius:999px;box-shadow:var(--pop-sm);font-family:var(--font-body);
+  font-weight:800;font-size:14px;padding:10px 22px;cursor:pointer;transition:.12s}
+.xshare:hover{transform:translate(1px,1px);box-shadow:1px 1px 0 rgba(20,50,70,.9)}
+.xshare svg{width:15px;height:15px;fill:#fff}
 </style>
 </head>
 <body>
@@ -171,7 +198,7 @@ img{max-width:100%}
 <div class="wrap">
   <div class="hero">
     <span class="hero-badge">約4万件のデータから算出！</span>
-    <h1>武庫川一文字 青物指数</h1>
+    <h1>武庫一の釣れる日がわかる！武庫川一文字 青物指数</h1>
     <div class="lede">武庫川一文字で、ブリやサワラが「釣れる日」をデータで先読み</div>
   </div>
 
@@ -187,7 +214,14 @@ img{max-width:100%}
     <div class="dots" id="dots"></div>
     <div class="hint">&#8249; スワイプで7日先まで &#8250;</div>
   </div>
-
+    
+ <div class="share-row">
+    <button class="xshare" id="xshare" type="button" aria-label="Xでシェア">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 1.2h3.7l-8 9.1L24 22.8h-7.4l-5.8-7.6-6.6 7.6H.4l8.5-9.7L0 1.2h7.6l5.2 6.9 5-6.9Zm-1.3 19.4h2L6.5 3.3H4.3l13.3 17.3Z"/></svg>
+      いまの指数をXでシェア
+    </button>
+  </div>
+    
   <div class="block">
     <div class="blockHead"><span class="blockIcon">📅</span><span class="blockTitle">釣れる日はいつ？ 釣果指数カレンダー</span></div>
     <div id="cal"></div>
@@ -210,7 +244,39 @@ img{max-width:100%}
     </div>
   </div>
 </div>
-
+    
+ <section class="guide">
+    <h2 class="guide-lead-h">現役データサイエンティストが、本気で作った青物予報です</h2>
+    <p class="guide-lead">「今週末、武庫川一文字（ムコイチ）でブリやサワラは釣れるのか？」——この問いに感覚ではなくデータで答えるため、<b>現役のデータサイエンティストが実務と同じ手法で</b>この青物指数を構築しました。世に多い「なんとなくの経験則」や占い的な釣果予報とは、作り方から違います。</p>
+    <ul class="guide-spec">
+      <li><b>約42,000件・18年分</b>の釣果を1件ずつ構造化。魚種の表記揺れ（ツバス・ハマチ・メジロ・ブリ）まで整理</li>
+      <li>潮汐（天文計算）・季節・気象・水温を各釣行日に紐付け、<b>勾配ブースティング（LightGBM）</b>で学習</li>
+      <li>未来の情報を誤って使う<b>データリークを厳密に排除</b>し、時系列を守って検証</li>
+      <li>「釣り人が多い日は報告も増える」といった<b>観測バイアスを補正</b></li>
+      <li>予測精度は検証で<b>AUC 0.79〜0.84</b>（釣れる日を正しく上位に並べられる度合い）</li>
+    </ul>
+    <p>指数は「絶対に釣れる確率」ではなく、<b>その時期の中での相対的な釣れやすさの順位</b>です。だから「オフシーズンなのに指数が高すぎる」といった不自然さが起きません。ここから先は、その4万件が明かした武庫川一文字の青物の真実を、いくつか紹介します。</p>
+ 
+    <h2>武庫川一文字の青物は、いつ釣れる？</h2>
+    <p>まず結論から。18年分の実データでは、<b>ブリ系（ツバス・ハマチ・メジロ・ブリ）の釣果は10月と11月に集中</b>し、この2か月だけで年間の約6割を占めます。<b>サワラ系（サゴシ・サワラ）は9〜10月がピーク</b>で、ブリより少し早く始まり、シーズンも長めです。</p>
+    <p>春（4〜6月）にも小さな山があり、ハマチやサゴシが狙えます。逆に<b>2〜3月はほぼオフシーズン</b>で、青物の釣果はほとんど記録されていません。上のカレンダーでは、月内の半月ごとの変化まで確認できます。</p>
+ 
+    <h2>「大潮だから釣れる」は本当か？</h2>
+    <p>釣具屋でも雑誌でも当たり前のように語られる「青物は大潮に釣れる」。これを約4万件で検証しました。結果は意外なもので、<b>ハイシーズンの潮回り別の釣果率は、大潮58.2%・中潮58.5%・小潮58.8%とほぼ横並び</b>。統計的にも有意な差は出ませんでした。</p>
+    <p>予測モデルの中でも、潮汐の寄与はわずか数％です。唯一はっきり言えるのは「<b>潮がまったく動かない日だけは避けたほうがいい</b>」ということ。大潮か小潮かで釣行日を決める根拠は、少なくともこのデータには見当たりませんでした。</p>
+ 
+    <h2>土日は本当に釣れる？——「人が多いだけ」の真実</h2>
+    <p>「土日は釣果報告が多いから釣れる」と思われがちです。確かに週末の釣果報告は平日より約13%多い。しかし魚種別に分けると、<b>増えているのはチヌやサビキ釣りの釣果で、青物の報告数は平日と週末でほぼ同じ</b>でした。</p>
+    <p>さらに「1人あたりの釣果」で見ると、ブリはむしろ<b>週末のほうが2割ほど少ない</b>。土日は釣り人が増え、ポイントが混み合うためと考えられます。「土日はよく釣れる」は報告総数が多いことによる錯覚で、青物を本気で狙うなら平日のほうが分がいい、という結果です。</p>
+ 
+    <h2>なぜこの数年、ムコイチで青物が増えたのか（そして減っているのか）</h2>
+    <p>ムコイチのブリ系の釣果比率は、<b>2016年の約3%から2022年には60%超へと急増</b>しました。この時期は、2017年8月から2025年4月まで続いた<b>観測史上最長の黒潮大蛇行</b>と一致します。黒潮の流路が変わり、青物の回遊が大阪湾に大きく入り込んだためと考えられます。</p>
+    <p>その大蛇行は2025年4月に終息しました。ブリ系の比率は2022年の60%から<b>2026年は21%まで低下</b>しており、青物の当たり年は静かに終わりつつあります。この指数が「その年に魚がいるか」を最重視しているのは、こうした年ごとの資源変動こそが釣果を左右する最大の要因だからです。</p>
+ 
+    <p class="guide-cta">武庫川一文字でのルアー選びは、<a href="../article/mukogawa-lure4.html">武庫川一文字で釣れるルアー4選</a>や<a href="../article/2026-new-lure.html">2026年新作ルアーまとめ</a>も参考にどうぞ。</p>
+  </section>
+ 
+    
 <footer class="site-footer">
   <nav class="footer-nav">
     <a href="index.html">トップ</a>
