@@ -103,6 +103,26 @@ Claude Code は**該当箇所にプレースホルダーのコメントだけ残
 - 1記事＝1 HTMLファイル。
 - ファイル名は `data/lures.csv` の `file_name` 列を使う（例：`file_name` が `camashunter` → `camashunter.html`）。
 - 保存先は `article/` フォルダ（overdrive107s.html や既存記事と同じ場所）。
+- CSVに無いルアーの記事を作った場合は、`data/lures.csv` にも1行追加する。
+
+---
+
+## 記事作成後：ルアー図鑑（lure-zukan.html）への反映
+
+個別ルアー記事を作ったら、**必ず `lure-zukan.html` にもカードを追加する**（記事を作っただけで終わらせない）。
+
+- **既に「準備中」カードがある場合**（`data-status="coming"`、`lure-card--coming`）：新しく足さずに、そのカードを「記事あり」に切り替える。
+  - `data-status` の `coming` → `ready`（`new` は残す）
+  - `<div class="lure-card lure-card--coming">` → `<a href="/lure-gatya/article/{file_name}.html" class="lure-card">`（閉じタグも `</a>` に）
+  - バッジ `badge--coming 準備中` → `badge--ready 記事あり`
+  - 画像パスが実在するファイルと合っているか確認する。
+- **カードが無い場合**：既存カードと同じ構造で `<li class="lure-item">` を追加する。
+  - 置き場所は「魚種（`<h2 class="lure-section__title">`）」→「ジャンル（`<h3 class="lure-group__title">`）」。該当グループの末尾に足し、無ければ同じ書式でグループを新設する。
+  - `data-name`（表示名＋カナ＋検索用の別名）、`data-maker`（既存の表記に合わせる）、`data-category`（魚種）、`data-type`（グループ名）、`data-status`（`ready`、2026年以降の発売なら `ready new`）を入れる。
+  - 画像は `/lure-gatya/image/{メイン画像}`。画像が無い場合はプレースホルダーコメントを残す。
+  - 説明文は1行程度、`meta-tag` はジャンル・サイズ・魚種などを3〜5個。
+- まとめ記事・比較記事（エリアまとめ、〇選、比較など）は図鑑に載せない。
+- 反映後、既存カードを壊していないか（`<li>`・`<ul>`・`<section>` の開閉数が合っているか）を確認する。
 
 ---
 
