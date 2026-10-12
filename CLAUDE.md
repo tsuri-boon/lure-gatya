@@ -129,6 +129,17 @@ Claude Code は**該当箇所にプレースホルダーのコメントだけ残
 
 ---
 
+## 記事作成後：サイトマップ（sitemap.xml）の更新
+
+記事（個別記事・まとめ記事とも）を追加・更新したら、コミット前に **`node tools/make-sitemap.js`** を実行して `sitemap.xml` を作り直し、記事と一緒にコミットする。
+
+- トップ階層の主要ページと `article/` 内の全記事が自動で載る。`lastmod` は各ファイルの最終コミット日（未コミットの変更は今日の日付）。
+- テスト用・テンプレートなど載せたくないページは、`tools/make-sitemap.js` の `EXCLUDE` に追加する。
+- Search Console にはサイトマップ（`https://tsuri-boon.github.io/lure-gatya/sitemap.xml`）を登録済みの前提。記事ごとの「インデックス登録をリクエスト」は手動作業なので、Claude Code は行わない。
+- `robots.txt` はドメイン直下（tsuri-boon.github.io）にしか置けないため、このリポジトリでは作らない。
+
+---
+
 ## 入力データ
 
 - `data/lures.csv` から読む。列は左から `ルアー名, maker_name, official_url, file_name`
