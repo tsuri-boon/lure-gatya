@@ -23,6 +23,9 @@ var EGI_DATA = [
   { maker:"YAMASHITA", series:"エギ王K",   size:"3.5号", type:"黒潮スペシャル",       weight_g:22.0,  sink_sec_per_m:3.0,  category:"アオリイカ",    affiliate_url:`<a href="//af.moshimo.com/af/c/click?a_id=5345165&p_id=1225&pc_id=1925&pl_id=18502&s_v=b5Rz2P0601xu&url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ftsuribitokan-masuda%2F4510001609660.html" target="_blank" ><img width="200px" src="https://item-shopping.c.yimg.jp/i/n/tsuribitokan-masuda_4510001609660"></a><img src="//i.moshimo.com/af/i/impression?a_id=5345165&p_id=1225&pc_id=1925&pl_id=18502" width="1" height="1" style="border:none;">` },
   { maker:"YAMASHITA", series:"エギ王K",   size:"3.5号", type:"ディープ黒潮スペシャル", weight_g:25.0, sink_sec_per_m:2.0, category:"アオリイカ",    affiliate_url:`<a href="//af.moshimo.com/af/c/click?a_id=5345165&p_id=1225&pc_id=1925&pl_id=18502&s_v=b5Rz2P0601xu&url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fyfto%2F4510001609714.html" target="_blank" ><img width="200px" src="https://item-shopping.c.yimg.jp/i/n/yfto_4510001609714"></a><img src="//i.moshimo.com/af/i/impression?a_id=5345165&p_id=1225&pc_id=1925&pl_id=18502" width="1" height="1" style="border:none;">` },
   { maker:"YAMASHITA", series:"エギ王K",   size:"4号",   type:"黒潮スペシャル",       weight_g:26.0,  sink_sec_per_m:3.0,  category:"アオリイカ",    affiliate_url:`<a href="//af.moshimo.com/af/c/click?a_id=5345165&p_id=1225&pc_id=1925&pl_id=18502&s_v=b5Rz2P0601xu&url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ftsuribitokan-masuda%2F4510001609660.html" target="_blank" ><img width="200px" src="https://item-shopping.c.yimg.jp/i/n/tsuribitokan-masuda_4510001609660"></a><img src="//i.moshimo.com/af/i/impression?a_id=5345165&p_id=1225&pc_id=1925&pl_id=18502" width="1" height="1" style="border:none;">` },
+  { maker:"YAMASHITA", series:"エギ王K", size:"2.5号", type:"ディープ", weight_g:13.0, sink_sec_per_m:2.5, category:"アオリイカ", affiliate_url:"" },
+  { maker:"YAMASHITA", series:"エギ王K", size:"3号", type:"ディープ", weight_g:19.0, sink_sec_per_m:2.0, category:"アオリイカ", affiliate_url:"" },
+  { maker:"YAMASHITA", series:"エギ王K", size:"3.5号", type:"ディープ", weight_g:25.0, sink_sec_per_m:2.0, category:"アオリイカ", affiliate_url:"" },
 
   { maker:"YAMASHITA", series:"エギ王LIVE",   size:"2号",   type:"ベーシック", weight_g:6.5,  sink_sec_per_m:5.5, category:"アオリイカ", affiliate_url:"" },
   { maker:"YAMASHITA", series:"エギ王LIVE",   size:"2.5号", type:"ベーシック", weight_g:10.0, sink_sec_per_m:5.5, category:"アオリイカ", affiliate_url:"" },
@@ -82,6 +85,8 @@ var EGI_DATA = [
   { maker:"DUEL", series:"イージーQ ダートマスター ラトル",    size:"3.5号", type:"ラトル",     weight_g:19.0, sink_sec_per_m:3.2,  category:"アオリイカ", affiliate_url:"" },
   { maker:"DUEL", series:"Ebi Q TR",                           size:"3.0号", type:"TR",         weight_g:23.0, sink_sec_per_m:null, category:"ティップラン", affiliate_url:"" },
   { maker:"DUEL", series:"Ebi Q TR",                           size:"3.5号", type:"TR",         weight_g:28.0, sink_sec_per_m:null, category:"ティップラン", affiliate_url:"" },
+  { maker:"DUEL", series:"アオリーQ 大分布巻", size:"3号", type:"ベーシック", weight_g:16.0, sink_sec_per_m:null, category:"アオリイカ", affiliate_url:"" },
+  { maker:"DUEL", series:"アオリーQ 大分布巻", size:"3.5号", type:"ベーシック", weight_g:19.0, sink_sec_per_m:null, category:"アオリイカ", affiliate_url:"" },
 
   /* ---------- DAIWA ---------- */
   { maker:"DAIWA", series:"エメラルダス アモラスジョイント",             size:"2.5号",     type:"ベーシック", weight_g:11.0, sink_sec_per_m:4.75, category:"アオリイカ",  affiliate_url:"" },
@@ -101,8 +106,17 @@ var EGI_DATA = [
   { maker:"DAIWA", series:"エメラルダス フォールLC ラトル typeS",        size:"2.5号",     type:"ラトルTypeS", weight_g:9.5, sink_sec_per_m:6.5,  category:"アオリイカ",  affiliate_url:"" },
   { maker:"DAIWA", series:"エメラルダス フォールLC ラトル typeS",        size:"3.0号",     type:"ラトルTypeS", weight_g:14.0,sink_sec_per_m:6.0,  category:"アオリイカ",  affiliate_url:"" },
   { maker:"DAIWA", series:"エメラルダス フォールLC ラトル typeS",        size:"3.5号",     type:"ラトルTypeS", weight_g:20.5,sink_sec_per_m:6.0,  category:"アオリイカ",  affiliate_url:"" },
+  { maker:"DAIWA", series:"エメラルダス ダートLC", size:"2.5号", type:"ベーシック", weight_g:11.0, sink_sec_per_m:5.5, category:"アオリイカ", affiliate_url:"" },
   { maker:"DAIWA", series:"エメラルダス ダートLC",                       size:"3.0号",     type:"ベーシック", weight_g:16.0, sink_sec_per_m:4.0,  category:"アオリイカ",  affiliate_url:"" },
+  { maker:"DAIWA", series:"エメラルダス ダートLC", size:"3.5号", type:"ベーシック", weight_g:20.0, sink_sec_per_m:3.5, category:"アオリイカ", affiliate_url:"" },
+  { maker:"DAIWA", series:"エメラルダスダートLC TypeS", size:"3.0号", type:"TypeS", weight_g:15.0, sink_sec_per_m:6.0, category:"アオリイカ", affiliate_url:"" },
   { maker:"DAIWA", series:"エメラルダスダートLC TypeS",                  size:"3.5号",     type:"TypeS",      weight_g:19.0, sink_sec_per_m:6.0,  category:"アオリイカ",  affiliate_url:"" },
+  { maker:"DAIWA", series:"エメラルダス ダートLC ネガード", size:"2.5号", type:"ベーシック", weight_g:11.0, sink_sec_per_m:5.5, category:"アオリイカ", affiliate_url:"" },
+  { maker:"DAIWA", series:"エメラルダス ダートLC ネガード", size:"3.0号", type:"ベーシック", weight_g:16.0, sink_sec_per_m:4.0, category:"アオリイカ", affiliate_url:"" },
+  { maker:"DAIWA", series:"エメラルダス ダートLC ネガード", size:"3.5号", type:"ベーシック", weight_g:20.0, sink_sec_per_m:3.5, category:"アオリイカ", affiliate_url:"" },
+  { maker:"DAIWA", series:"エメラルダス ボート CTR", size:"2.5号", type:"ボート", weight_g:13.0, sink_sec_per_m:3.3, category:"ボートエギング", affiliate_url:"" },
+  { maker:"DAIWA", series:"エメラルダス ボート CTR", size:"3.0号", type:"ボート", weight_g:17.5, sink_sec_per_m:2.7, category:"ボートエギング", affiliate_url:"" },
+  { maker:"DAIWA", series:"エメラルダス ボート CTR", size:"3.5号", type:"ボート", weight_g:20.0, sink_sec_per_m:2.7, category:"ボートエギング", affiliate_url:"" },
   { maker:"DAIWA", series:"エメラルダス ボートジョイント",               size:"3.0号-25g", type:"ボート",     weight_g:25.0, sink_sec_per_m:null, category:"ティップラン", affiliate_url:"" },
   { maker:"DAIWA", series:"エメラルダス ボートジョイント",               size:"3.5号-30g", type:"ボート",     weight_g:30.0, sink_sec_per_m:null, category:"ティップラン", affiliate_url:"" },
   { maker:"DAIWA", series:"エメラルダス ボート II（ノーマルバージョン）", size:"2.75号-25g", type:"ボート",    weight_g:25.0, sink_sec_per_m:null, category:"ティップラン", affiliate_url:"" },
@@ -131,4 +145,35 @@ var EGI_DATA = [
   { maker:"SHIMANO", series:"クリンチ ディープ フラッシュブースト", size:"3.5号", type:"ディープ",         weight_g:23.0, sink_sec_per_m:1.9, category:"アオリイカ",    affiliate_url:"" },
   { maker:"SHIMANO", series:"クリンチ ロングアピール ジェットブースト", size:"3.0号", type:"ロングアピール", weight_g:13.0, sink_sec_per_m:4.2, category:"アオリイカ", affiliate_url:"" },
   { maker:"SHIMANO", series:"クリンチ ロングアピール ジェットブースト", size:"3.5号", type:"ロングアピール", weight_g:17.0, sink_sec_per_m:7.4, category:"アオリイカ", affiliate_url:"" },
+  { maker:"SHIMANO", series:"クリンチ カエル跳びアッパー", size:"2.5号", type:"ベーシック", weight_g:10.0, sink_sec_per_m:4.0, category:"アオリイカ", affiliate_url:"" },
+  { maker:"SHIMANO", series:"クリンチ カエル跳びアッパー", size:"3.0号", type:"ベーシック", weight_g:14.0, sink_sec_per_m:3.0, category:"アオリイカ", affiliate_url:"" },
+
+  /* ---------- DUO ---------- */
+  { maker:"DUO", series:"エギ政 改", size:"2.5号", type:"シャロー", weight_g:10.0, sink_sec_per_m:7.0, category:"アオリイカ", affiliate_url:"" },
+  { maker:"DUO", series:"エギ政 改", size:"3号", type:"シャロー", weight_g:15.0, sink_sec_per_m:6.0, category:"アオリイカ", affiliate_url:"" },
+  { maker:"DUO", series:"エギ政 改", size:"3.5号", type:"シャロー", weight_g:20.0, sink_sec_per_m:6.0, category:"アオリイカ", affiliate_url:"" },
+  { maker:"DUO", series:"エギ政 改", size:"2.5号", type:"ノーマル", weight_g:11.0, sink_sec_per_m:3.5, category:"アオリイカ", affiliate_url:"" },
+  { maker:"DUO", series:"エギ政 改", size:"3号", type:"ノーマル", weight_g:16.0, sink_sec_per_m:3.5, category:"アオリイカ", affiliate_url:"" },
+  { maker:"DUO", series:"エギ政 改", size:"3.5号", type:"ノーマル", weight_g:22.0, sink_sec_per_m:3.5, category:"アオリイカ", affiliate_url:"" },
+
+  /* ---------- JACKALL ---------- */
+  { maker:"JACKALL", series:"ゲキダキ カミナリ", size:"3号", type:"ベーシック", weight_g:16.0, sink_sec_per_m:4.0, category:"アオリイカ", affiliate_url:"" },
+  { maker:"JACKALL", series:"ゲキダキ カミナリ", size:"3.5号", type:"ベーシック", weight_g:22.0, sink_sec_per_m:4.0, category:"アオリイカ", affiliate_url:"" },
+
+  /* ---------- CRAZY OCEAN ---------- */
+  { maker:"CRAZY OCEAN", series:"キャストランナー", size:"3号", type:"シンカーハンガー付き", weight_g:12.0, sink_sec_per_m:null, category:"アオリイカ", affiliate_url:"" },
+  { maker:"CRAZY OCEAN", series:"キャストランナー", size:"3.5号", type:"シンカーハンガー付き", weight_g:18.0, sink_sec_per_m:null, category:"アオリイカ", affiliate_url:"" },
+
+  /* ---------- LITTLE JACK ---------- */
+  { maker:"LITTLE JACK", series:"ハグゴス（HUGGOS）", size:"55mm", type:"アジ型", weight_g:6.0, sink_sec_per_m:4.5, category:"アオリイカ", affiliate_url:"" },
+  { maker:"LITTLE JACK", series:"ハグゴス（HUGGOS）", size:"65mm", type:"アジ型", weight_g:9.0, sink_sec_per_m:4.5, category:"アオリイカ", affiliate_url:"" },
+  { maker:"LITTLE JACK", series:"ハグゴス（HUGGOS）", size:"75mm", type:"アジ型", weight_g:14.0, sink_sec_per_m:4.5, category:"アオリイカ", affiliate_url:"" },
+  { maker:"LITTLE JACK", series:"ハグゴス（HUGGOS）", size:"90mm", type:"アジ型", weight_g:22.0, sink_sec_per_m:4.5, category:"アオリイカ", affiliate_url:"" },
+
+  /* ---------- HAYASHI（林釣漁具製作所） ---------- */
+  { maker:"HAYASHI", series:"餌木猿", size:"3号", type:"ノーマル", weight_g:15.0, sink_sec_per_m:3.0, category:"アオリイカ", affiliate_url:"" },
+  { maker:"HAYASHI", series:"餌木猿", size:"3.5号", type:"ノーマル", weight_g:21.0, sink_sec_per_m:3.3, category:"アオリイカ", affiliate_url:"" },
+  { maker:"HAYASHI", series:"餌木猿", size:"3.5号", type:"シャロー", weight_g:21.0, sink_sec_per_m:4.4, category:"アオリイカ", affiliate_url:"" },
+  { maker:"HAYASHI", series:"餌木猿", size:"3.5号", type:"スーパーシャロー", weight_g:20.0, sink_sec_per_m:6.6, category:"アオリイカ", affiliate_url:"" },
+  { maker:"HAYASHI", series:"飛猿", size:"3.5号", type:"ノーマル", weight_g:20.0, sink_sec_per_m:3.3, category:"アオリイカ", affiliate_url:"" },
 ];
