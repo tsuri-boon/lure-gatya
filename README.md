@@ -1,4 +1,4 @@
-# lure-gatya
+# tsuri-boon.github.io
 ルアーガチャのウェブアプリページです。
 
 気軽に楽しんでほしいです。

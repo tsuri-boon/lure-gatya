@@ -8,7 +8,7 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const ROOT = path.resolve(__dirname, '..');
-const BASE = 'https://tsuri-boon.github.io/lure-gatya/';
+const BASE = 'https://tsuri-boon.github.io/';
 const EXCLUDE = new Set([
   'testindnx.html',              // テスト用ページ
   'article/lure_template.html',  // 記事テンプレート

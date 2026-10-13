@@ -7,7 +7,7 @@
 
 ## プロジェクト概要
 
-- 釣り系アフィリエイトサイト（GitHub Pages / tsuri-boon.github.io/lure-gatya）
+- 釣り系アフィリエイトサイト（GitHub Pages / tsuri-boon.github.io）
 - ルアー図鑑・釣りガイド・ツールを掲載
 - 今回のタスク：ルアー名＋メーカー名から個別ルアー記事を量産する
 
@@ -113,7 +113,7 @@ Claude Code は**該当箇所にプレースホルダーのコメントだけ残
 
 - **既に「準備中」カードがある場合**（`data-status="coming"`、`lure-card--coming`）：新しく足さずに、そのカードを「記事あり」に切り替える。
   - `data-status` の `coming` → `ready`（`new` は残す）
-  - `<div class="lure-card lure-card--coming">` → `<a href="/lure-gatya/article/{file_name}.html" class="lure-card">`（閉じタグも `</a>` に）
+  - `<div class="lure-card lure-card--coming">` → `<a href="/article/{file_name}.html" class="lure-card">`（閉じタグも `</a>` に）
   - バッジ `badge--coming 準備中` → `badge--ready 記事あり`
   - 画像パスが実在するファイルと合っているか確認する。
 - **カードが無い場合**：既存カードと同じ構造で `<li class="lure-item">` を追加する。
@@ -122,7 +122,7 @@ Claude Code は**該当箇所にプレースホルダーのコメントだけ残
   - **新作は `data-year`（発売年）で管理する。** 発売年が分かるものは `data-year="2026"` のように入れ、今年の発売なら `data-status` に `new` と「新作」バッジも付けておく。
     ページ内のスクリプトが `data-year` が今年以降のものだけを「新作」にするので、年が変わると自動で新作から外れる（翌年は2027年発売のものが新作になる）。
   - 新しい魚種のセクションを作ったら、上部の「魚種ジャンル」ボタン（`filter-chip`）にも同じ名前で追加する。
-  - 画像は `/lure-gatya/image/{メイン画像}`。画像が無い場合はプレースホルダーコメントを残す。
+  - 画像は `/image/{メイン画像}`。画像が無い場合はプレースホルダーコメントを残す。
   - 説明文は1行程度、`meta-tag` はジャンル・サイズ・魚種などを3〜5個。
 - まとめ記事・比較記事（エリアまとめ、〇選、比較など）は図鑑に載せない。
 - 反映後、既存カードを壊していないか（`<li>`・`<ul>`・`<section>` の開閉数が合っているか）を確認する。
@@ -135,7 +135,7 @@ Claude Code は**該当箇所にプレースホルダーのコメントだけ残
 
 - トップ階層の主要ページと `article/` 内の全記事が自動で載る。`lastmod` は各ファイルの最終コミット日（未コミットの変更は今日の日付）。
 - テスト用・テンプレートなど載せたくないページは、`tools/make-sitemap.js` の `EXCLUDE` に追加する。
-- Search Console にはサイトマップ（`https://tsuri-boon.github.io/lure-gatya/sitemap.xml`）を登録済みの前提。記事ごとの「インデックス登録をリクエスト」は手動作業なので、Claude Code は行わない。
+- Search Console にはサイトマップ（`https://tsuri-boon.github.io/sitemap.xml`）を登録済みの前提。記事ごとの「インデックス登録をリクエスト」は手動作業なので、Claude Code は行わない。
 - `robots.txt` はドメイン直下（tsuri-boon.github.io）にしか置けないため、このリポジトリでは作らない。
 
 ---
