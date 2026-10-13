@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tsuri-boon.github.io/sitemap.xml
