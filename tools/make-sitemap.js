@@ -18,7 +18,7 @@ const today = new Date();
 const todayStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
 
 const git = (cmd) => execSync(cmd, { cwd: ROOT, encoding: 'utf8' }).trim();
-const changed = new Set(git('git status --porcelain').split('\n').filter(Boolean).map(l => l.slice(3).replace(/"/g, '')));
+const changed = new Set(execSync('git status --porcelain', { cwd: ROOT, encoding: 'utf8' }).split('\n').filter(Boolean).map(l => l.slice(3).replace(/"/g, '')));
 
 function lastmod(rel) {
   if (changed.has(rel)) return todayStr;
@@ -36,7 +36,7 @@ const urls = pages
   .sort((a, b) => (a === 'index.html' ? -1 : b === 'index.html' ? 1 : a.localeCompare(b)))
   .map(p => [
     '  <url>',
-    `    <loc>${BASE}${p}</loc>`,
+    `    <loc>${BASE}${p === 'index.html' ? '' : p}</loc>`,  // トップは / を正規URLにする
     `    <lastmod>${lastmod(p)}</lastmod>`,
     `    <priority>${priority(p)}</priority>`,
     '  </url>',
