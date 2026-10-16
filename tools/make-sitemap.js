@@ -12,6 +12,7 @@ const BASE = 'https://tsuri-boon.github.io/';
 const EXCLUDE = new Set([
   'testindnx.html',              // テスト用ページ
   'article/lure_template.html',  // 記事テンプレート
+  'makers.html',                 // maker-zukan.html への転送ページ
 ]);
 
 const today = new Date();
@@ -30,7 +31,7 @@ const top = fs.readdirSync(ROOT).filter(f => f.endsWith('.html'));
 const articles = fs.readdirSync(path.join(ROOT, 'article')).filter(f => f.endsWith('.html')).map(f => 'article/' + f);
 const pages = [...top, ...articles].filter(p => !EXCLUDE.has(p));
 
-const priority = (p) => (p === 'index.html' ? '1.0' : p === 'lure-zukan.html' || p === 'lure-gatya.html' ? '0.9' : p.startsWith('article/') ? '0.7' : '0.5');
+const priority = (p) => (p === 'index.html' ? '1.0' : p === 'lure-zukan.html' || p === 'maker-zukan.html' || p === 'lure-gatya.html' ? '0.9' : p.startsWith('article/') ? '0.7' : '0.5');
 
 const urls = pages
   .sort((a, b) => (a === 'index.html' ? -1 : b === 'index.html' ? 1 : a.localeCompare(b)))

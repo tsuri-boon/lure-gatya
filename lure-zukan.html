@@ -54,7 +54,7 @@
   <nav class="sub-nav-inner">
     <a href="lure-gatya.html">ガチャページ</a>
     <a href="tsuri-boon.html">tsuri-boonとは</a>
-    <a href="makers.html">メーカー一覧</a>
+    <a href="maker-zukan.html">メーカー図鑑</a>
     <a href="lure-zukan.html">ルアー図鑑</a>
   </nav>
 </div>
@@ -6577,6 +6577,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   searchInput.addEventListener("input", updateList);
+
+  // メーカー図鑑などから ?q=キーワード 付きで開いたときは、その言葉で検索した状態にする
+  const q = new URLSearchParams(location.search).get("q");
+  if (q) searchInput.value = q;
 
   updateList();
 });
