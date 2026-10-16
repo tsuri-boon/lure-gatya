@@ -300,6 +300,12 @@ p {
   box-shadow: 0 8px 20px rgba(26,74,122,0.3);
 }
 
+/* 記事がまだないルアー（<div>のカード）はリンクではないので浮かせない */
+div.similar-lure-box:hover {
+  transform: none;
+  box-shadow: none;
+}
+
 .similar-lure-thumb {
   display: block;
   width: 88px;
